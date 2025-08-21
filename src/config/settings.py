@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     # TTS Configuration
     tts_engine: Literal["piper", "coqui"] = Field(default="piper", description="TTS engine")
     tts_model_path: Path = Field(default=Path("./models/tts/"), description="TTS models directory")
-    tts_voice: str = Field(default="es_ES-medium", description="Default TTS voice")
+    tts_voice: str = Field(default="es_ES-davefx-medium", description="Default TTS voice")
     
     # STT Configuration  
     stt_engine: Literal["whisper_cpp", "vosk"] = Field(default="whisper_cpp", description="STT engine")

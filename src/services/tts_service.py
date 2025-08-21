@@ -7,7 +7,10 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel
 
-from ..config.settings import settings
+try:
+    from ..config.settings import settings
+except ImportError:
+    from config.settings import settings
 
 
 class AudioInfo(BaseModel):
