@@ -1,0 +1,637 @@
+{
+  "letras": [
+    {
+      "orden": 0,
+      "letra": "S",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.048
+    },
+    {
+      "orden": 1,
+      "letra": "o",
+      "timestamp_inicio": 0.048,
+      "timestamp_fin": 0.096
+    },
+    {
+      "orden": 2,
+      "letra": "b",
+      "timestamp_inicio": 0.096,
+      "timestamp_fin": 0.144
+    },
+    {
+      "orden": 3,
+      "letra": "r",
+      "timestamp_inicio": 0.144,
+      "timestamp_fin": 0.192
+    },
+    {
+      "orden": 4,
+      "letra": "e",
+      "timestamp_inicio": 0.192,
+      "timestamp_fin": 0.24
+    },
+    {
+      "orden": 5,
+      "letra": " ",
+      "timestamp_inicio": 0.24,
+      "timestamp_fin": 0.24
+    },
+    {
+      "orden": 6,
+      "letra": "t",
+      "timestamp_inicio": 0.24,
+      "timestamp_fin": 0.295
+    },
+    {
+      "orden": 7,
+      "letra": "o",
+      "timestamp_inicio": 0.295,
+      "timestamp_fin": 0.35
+    },
+    {
+      "orden": 8,
+      "letra": "d",
+      "timestamp_inicio": 0.35,
+      "timestamp_fin": 0.405
+    },
+    {
+      "orden": 9,
+      "letra": "a",
+      "timestamp_inicio": 0.405,
+      "timestamp_fin": 0.46
+    },
+    {
+      "orden": 10,
+      "letra": " ",
+      "timestamp_inicio": 0.46,
+      "timestamp_fin": 0.46
+    },
+    {
+      "orden": 11,
+      "letra": "c",
+      "timestamp_inicio": 0.46,
+      "timestamp_fin": 0.55
+    },
+    {
+      "orden": 12,
+      "letra": "o",
+      "timestamp_inicio": 0.55,
+      "timestamp_fin": 0.64
+    },
+    {
+      "orden": 13,
+      "letra": "s",
+      "timestamp_inicio": 0.64,
+      "timestamp_fin": 0.73
+    },
+    {
+      "orden": 14,
+      "letra": "a",
+      "timestamp_inicio": 0.73,
+      "timestamp_fin": 0.82
+    },
+    {
+      "orden": 15,
+      "letra": " ",
+      "timestamp_inicio": 0.82,
+      "timestamp_fin": 0.82
+    },
+    {
+      "orden": 16,
+      "letra": "g",
+      "timestamp_inicio": 0.82,
+      "timestamp_fin": 0.8755555555555555
+    },
+    {
+      "orden": 17,
+      "letra": "u",
+      "timestamp_inicio": 0.8755555555555555,
+      "timestamp_fin": 0.9311111111111111
+    },
+    {
+      "orden": 18,
+      "letra": "a",
+      "timestamp_inicio": 0.9311111111111111,
+      "timestamp_fin": 0.9866666666666666
+    },
+    {
+      "orden": 19,
+      "letra": "r",
+      "timestamp_inicio": 0.9866666666666666,
+      "timestamp_fin": 1.0422222222222222
+    },
+    {
+      "orden": 20,
+      "letra": "d",
+      "timestamp_inicio": 1.0422222222222222,
+      "timestamp_fin": 1.0977777777777777
+    },
+    {
+      "orden": 21,
+      "letra": "a",
+      "timestamp_inicio": 1.0977777777777777,
+      "timestamp_fin": 1.1533333333333333
+    },
+    {
+      "orden": 22,
+      "letra": "d",
+      "timestamp_inicio": 1.1533333333333333,
+      "timestamp_fin": 1.208888888888889
+    },
+    {
+      "orden": 23,
+      "letra": "a",
+      "timestamp_inicio": 1.208888888888889,
+      "timestamp_fin": 1.2644444444444445
+    },
+    {
+      "orden": 24,
+      "letra": ",",
+      "timestamp_inicio": 1.2644444444444445,
+      "timestamp_fin": 1.32
+    },
+    {
+      "orden": 25,
+      "letra": " ",
+      "timestamp_inicio": 1.56,
+      "timestamp_fin": 1.56
+    },
+    {
+      "orden": 26,
+      "letra": "g",
+      "timestamp_inicio": 1.56,
+      "timestamp_fin": 1.61
+    },
+    {
+      "orden": 27,
+      "letra": "u",
+      "timestamp_inicio": 1.61,
+      "timestamp_fin": 1.6600000000000001
+    },
+    {
+      "orden": 28,
+      "letra": "a",
+      "timestamp_inicio": 1.6600000000000001,
+      "timestamp_fin": 1.71
+    },
+    {
+      "orden": 29,
+      "letra": "r",
+      "timestamp_inicio": 1.71,
+      "timestamp_fin": 1.76
+    },
+    {
+      "orden": 30,
+      "letra": "d",
+      "timestamp_inicio": 1.76,
+      "timestamp_fin": 1.81
+    },
+    {
+      "orden": 31,
+      "letra": "a",
+      "timestamp_inicio": 1.81,
+      "timestamp_fin": 1.86
+    },
+    {
+      "orden": 32,
+      "letra": " ",
+      "timestamp_inicio": 1.86,
+      "timestamp_fin": 1.86
+    },
+    {
+      "orden": 33,
+      "letra": "t",
+      "timestamp_inicio": 1.86,
+      "timestamp_fin": 1.92
+    },
+    {
+      "orden": 34,
+      "letra": "u",
+      "timestamp_inicio": 1.92,
+      "timestamp_fin": 1.98
+    },
+    {
+      "orden": 35,
+      "letra": " ",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 36,
+      "letra": "c",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 37,
+      "letra": "o",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 38,
+      "letra": "r",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 39,
+      "letra": "a",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 40,
+      "letra": "z",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 41,
+      "letra": "ó",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 42,
+      "letra": "n",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 43,
+      "letra": ";",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 44,
+      "letra": " ",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.74
+    },
+    {
+      "orden": 45,
+      "letra": "p",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 2.79
+    },
+    {
+      "orden": 46,
+      "letra": "o",
+      "timestamp_inicio": 2.79,
+      "timestamp_fin": 2.8400000000000003
+    },
+    {
+      "orden": 47,
+      "letra": "r",
+      "timestamp_inicio": 2.8400000000000003,
+      "timestamp_fin": 2.89
+    },
+    {
+      "orden": 48,
+      "letra": "q",
+      "timestamp_inicio": 2.89,
+      "timestamp_fin": 2.94
+    },
+    {
+      "orden": 49,
+      "letra": "u",
+      "timestamp_inicio": 2.94,
+      "timestamp_fin": 2.99
+    },
+    {
+      "orden": 50,
+      "letra": "e",
+      "timestamp_inicio": 2.99,
+      "timestamp_fin": 3.04
+    },
+    {
+      "orden": 51,
+      "letra": " ",
+      "timestamp_inicio": 3.04,
+      "timestamp_fin": 3.04
+    },
+    {
+      "orden": 52,
+      "letra": "d",
+      "timestamp_inicio": 3.04,
+      "timestamp_fin": 3.1100000000000003
+    },
+    {
+      "orden": 53,
+      "letra": "e",
+      "timestamp_inicio": 3.1100000000000003,
+      "timestamp_fin": 3.18
+    },
+    {
+      "orden": 54,
+      "letra": " ",
+      "timestamp_inicio": 3.18,
+      "timestamp_fin": 3.18
+    },
+    {
+      "orden": 55,
+      "letra": "é",
+      "timestamp_inicio": 3.18,
+      "timestamp_fin": 3.23
+    },
+    {
+      "orden": 56,
+      "letra": "l",
+      "timestamp_inicio": 3.23,
+      "timestamp_fin": 3.28
+    },
+    {
+      "orden": 57,
+      "letra": " ",
+      "timestamp_inicio": 3.28,
+      "timestamp_fin": 3.28
+    },
+    {
+      "orden": 58,
+      "letra": "m",
+      "timestamp_inicio": 3.28,
+      "timestamp_fin": 3.34
+    },
+    {
+      "orden": 59,
+      "letra": "a",
+      "timestamp_inicio": 3.34,
+      "timestamp_fin": 3.4
+    },
+    {
+      "orden": 60,
+      "letra": "n",
+      "timestamp_inicio": 3.4,
+      "timestamp_fin": 3.46
+    },
+    {
+      "orden": 61,
+      "letra": "a",
+      "timestamp_inicio": 3.46,
+      "timestamp_fin": 3.52
+    },
+    {
+      "orden": 62,
+      "letra": " ",
+      "timestamp_inicio": 3.52,
+      "timestamp_fin": 3.52
+    },
+    {
+      "orden": 63,
+      "letra": "l",
+      "timestamp_inicio": 3.52,
+      "timestamp_fin": 3.5700000000000003
+    },
+    {
+      "orden": 64,
+      "letra": "a",
+      "timestamp_inicio": 3.5700000000000003,
+      "timestamp_fin": 3.62
+    },
+    {
+      "orden": 65,
+      "letra": " ",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 66,
+      "letra": "v",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 67,
+      "letra": "i",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 68,
+      "letra": "d",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 69,
+      "letra": "a",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 70,
+      "letra": ".",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 71,
+      "letra": " ",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 72,
+      "letra": "(",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 73,
+      "letra": "P",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 74,
+      "letra": "r",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 75,
+      "letra": "o",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 76,
+      "letra": "v",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 77,
+      "letra": "e",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 78,
+      "letra": "r",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 79,
+      "letra": "b",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 80,
+      "letra": "i",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 81,
+      "letra": "o",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 82,
+      "letra": "s",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 83,
+      "letra": " ",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 84,
+      "letra": "4",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 85,
+      "letra": ":",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 86,
+      "letra": "2",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 87,
+      "letra": "3",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    },
+    {
+      "orden": 88,
+      "letra": ")",
+      "timestamp_inicio": 5.3,
+      "timestamp_fin": 5.3
+    }
+  ],
+  "palabras": [
+    {
+      "orden": 0,
+      "palabra": "Sobre",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.24
+    },
+    {
+      "orden": 1,
+      "palabra": "toda",
+      "timestamp_inicio": 0.24,
+      "timestamp_fin": 0.46
+    },
+    {
+      "orden": 2,
+      "palabra": "cosa",
+      "timestamp_inicio": 0.46,
+      "timestamp_fin": 0.82
+    },
+    {
+      "orden": 3,
+      "palabra": "guardada,",
+      "timestamp_inicio": 0.82,
+      "timestamp_fin": 1.32
+    },
+    {
+      "orden": 4,
+      "palabra": "guarda",
+      "timestamp_inicio": 1.56,
+      "timestamp_fin": 1.86
+    },
+    {
+      "orden": 5,
+      "palabra": "tu",
+      "timestamp_inicio": 1.86,
+      "timestamp_fin": 1.98
+    },
+    {
+      "orden": 6,
+      "palabra": "corazón,",
+      "timestamp_inicio": 1.98,
+      "timestamp_fin": 2.3
+    },
+    {
+      "orden": 7,
+      "palabra": "porque",
+      "timestamp_inicio": 2.74,
+      "timestamp_fin": 3.04
+    },
+    {
+      "orden": 8,
+      "palabra": "de",
+      "timestamp_inicio": 3.04,
+      "timestamp_fin": 3.18
+    },
+    {
+      "orden": 9,
+      "palabra": "él",
+      "timestamp_inicio": 3.18,
+      "timestamp_fin": 3.28
+    },
+    {
+      "orden": 10,
+      "palabra": "mana",
+      "timestamp_inicio": 3.28,
+      "timestamp_fin": 3.52
+    },
+    {
+      "orden": 11,
+      "palabra": "la",
+      "timestamp_inicio": 3.52,
+      "timestamp_fin": 3.62
+    },
+    {
+      "orden": 12,
+      "palabra": "vida,",
+      "timestamp_inicio": 3.62,
+      "timestamp_fin": 3.88
+    },
+    {
+      "orden": 13,
+      "palabra": "proveer",
+      "timestamp_inicio": 4.1,
+      "timestamp_fin": 4.4
+    },
+    {
+      "orden": 14,
+      "palabra": "vio",
+      "timestamp_inicio": 4.4,
+      "timestamp_fin": 4.54
+    },
+    {
+      "orden": 15,
+      "palabra": "423.",
+      "timestamp_inicio": 4.54,
+      "timestamp_fin": 5.3
+    }
+  ],
+  "method": "whisper"
+}
