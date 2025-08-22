@@ -14,16 +14,16 @@ def main():
     """
     Ejecuta synthesize_with_timestamps y muestra resultados relevantes, tiempos y paths de caché.
     """
-    texto = "This is a test sentence.\nHere is another line for alignment."
+    texto = "Porque de tal manera amo Dios al mundo, que ha dado a su Hijo unigenito, para que todo aquel que en el cree, no se pierda, mas tenga vida eterna."
     print("Texto a sintetizar:", texto)
 
     # Crear el servicio TTS usando el motor piper y la voz disponible
     tts = TTSService(engine="piper")
     tts.voice = "es_ES-davefx-medium"  # Aseguramos que el modelo existe
-    # Usar alineación avanzada con aeneas
-    from src.services.forced_alignment import ForcedAlignmentProcessor
-    tts.alignment_method = "aeneas"
-    tts.alignment_processor = ForcedAlignmentProcessor()
+    # Usar alineación con Whisper
+    from src.services.forced_alignment import WhisperAlignmentProcessor
+    tts.alignment_method = "whisper"
+    tts.alignment_processor = WhisperAlignmentProcessor(model_name="base", device="cpu")
 
     # Carpeta de caché
     cache_dir = tts._cacher.cache_dir

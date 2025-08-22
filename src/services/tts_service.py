@@ -13,12 +13,10 @@ except ImportError:
     from config.settings import settings
 from .tts_cacher import TTSCacher
 
-# Importar clases de alineación
 try:
-    from .forced_alignment import ForcedAlignmentProcessor, SimpleAlignmentProcessor
+    from .forced_alignment import WhisperAlignmentProcessor, SimpleAlignmentProcessor
 except ImportError:
-    # Implementación inline como fallback
-    ForcedAlignmentProcessor = None
+    WhisperAlignmentProcessor = None
     SimpleAlignmentProcessor = None
 
 # Entidades para alineación (compatibles con ElevenLabs)
@@ -61,9 +59,9 @@ class TTSService:
     def _init_alignment_processor(self):
         """Inicializa el procesador de alineación forzada."""
         try:
-            if ForcedAlignmentProcessor:
-                self.alignment_processor = ForcedAlignmentProcessor()
-                self.alignment_method = "aeneas"
+            if WhisperAlignmentProcessor:
+                self.alignment_processor = WhisperAlignmentProcessor(model_name="base", device="cpu")
+                self.alignment_method = "whisper"
             else:
                 self.alignment_processor = self._create_simple_processor()
                 self.alignment_method = "simple"
@@ -178,9 +176,8 @@ class TTSService:
         # Realizar alineación forzada
         print(f"⏱️ Realizando forced alignment con método {self.alignment_method}...")
         try:
-            if self.alignment_method == "aeneas":
-                word_alignments, char_alignments = self.alignment_processor.align_text_audio(text, audio_path)
-                # Convertir objetos de aeneas a nuestro formato
+            word_alignments, char_alignments = self.alignment_processor.align_text_audio(text, audio_path)
+            if self.alignment_method == "whisper":
                 palabras = [
                     Palabra(orden=i, palabra=w.word, timestamp_inicio=w.start_time, timestamp_fin=w.end_time)
                     for i, w in enumerate(word_alignments)
@@ -190,8 +187,6 @@ class TTSService:
                     for i, c in enumerate(char_alignments)
                 ]
             else:
-                # Método simple
-                word_alignments, char_alignments = self.alignment_processor.align_text_audio(text, audio_path)
                 palabras = [
                     Palabra(orden=i, palabra=w[0], timestamp_inicio=w[1], timestamp_fin=w[2])
                     for i, w in enumerate(word_alignments)
@@ -207,13 +202,10 @@ class TTSService:
                 "palabras": [{"orden": p.orden, "palabra": p.palabra, "timestamp_inicio": p.timestamp_inicio, "timestamp_fin": p.timestamp_fin} for p in palabras],
                 "method": self.alignment_method
             }
-            
             with open(align_file, "w", encoding="utf-8") as f:
                 json.dump(align_data, f, ensure_ascii=False, indent=2)
-
             print(f"✅ Alineación completada: {len(palabras)} palabras, {len(letras)} letras")
             return {"audio_path": audio_path, "letras": letras, "palabras": palabras}
-
         except Exception as e:
             print(f"❌ Error en alineación: {e}")
             # Fallback: retornar solo audio sin alineación
