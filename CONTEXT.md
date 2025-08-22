@@ -45,6 +45,7 @@ class Proyecto:
    # Main container with palabras[], frases[], escenas[], subtitulos[]
 
 ## Services (src/services/) - Business Logic
+
 # text_processing_service.py
 class TextProcessingService:
    def process_text_to_words(texto: str) -> List[Palabra]  # Text→TTS→STT→Words
@@ -52,16 +53,50 @@ class TextProcessingService:
    def generate_scenes(frases: List[Frase]) -> List[Escena]  # Uses LLM
    def generate_subtitles(frases: List[Frase]) -> List[Subtitulo]
 
-# tts_service.py - Local Text-to-Speech
+# tts_service.py - Local Text-to-Speech (Piper/Coqui, con caché)
 class TTSService:
-   def __init__(engine: "piper"|"coqui" = "piper")
-   def synthesize_audio(texto: str, output_path: str) -> AudioInfo
+   def __init__(engine: Literal["piper", "coqui"] = "piper")
+      # Inicializa el servicio, selecciona motor, prepara caché y modelo
+   def synthesize_audio(texto: str, output_path: Optional[str] = None) -> AudioInfo
+      # Sintetiza texto a audio usando Piper (por defecto) o Coqui (no implementado)
+      # Usa caché por hash de texto+voz+engine, devuelve AudioInfo (ruta, duración, sample_rate, canales, tamaño)
+      # Si output_path no se da, genera en caché
+   # Métodos internos:
+   def _synthesize_with_piper(texto: str, output_path: str) -> None
+      # Ejecuta Piper vía subprocess, requiere modelo .onnx
+   def _synthesize_with_coqui(texto: str, output_path: str) -> None
+      # (No implementado)
+   def _get_text_hash(texto: str) -> str
+      # Hash MD5 para caché
+   def _get_audio_info(file_path: str) -> AudioInfo
+      # Usa librosa y soundfile para extraer info del audio
 
-# stt_service.py - Local Speech-to-Text  
-class STTService:
-   def __init__(engine: "whisper_cpp"|"vosk" = "whisper_cpp")
-   def extract_word_timestamps(audio_path: str) -> List[WordTimestamp]
-   def align_text_with_audio(texto: str, audio_path: str) -> List[Palabra]
+
+# tts_service_elevenlabs.py - TTS en la nube (API ElevenLabs, alineación)
+class ElevenLabsTTSService:
+   def __init__(api_key: str, voice_id: str = "EXAVITQu4vr4xnSDxMaL")
+      # Inicializa con API key y voice_id
+   def synthesize_with_timestamps(text: str, output_path: str, model_id: str = "eleven_v3", ...)
+      # Llama endpoint /with-timestamps de ElevenLabs
+      # Devuelve dict: audio_path, letras (List[Letra]), palabras (List[Palabra])
+      # Decodifica audio base64, procesa alineación carácter y palabra
+   def synthesize(text: str, output_path: str, model_id: str = "eleven_v3", ...)
+      # Llama endpoint estándar (sin alineación), guarda audio mp3
+      # Imprime info de cuenta, suscripción y coste estimado
+   def check_subscription_info()
+      # Consulta créditos y límites de la cuenta
+   def get_user_info()
+      # Consulta info de usuario y suscripción
+   def estimate_cost(text: str, model_id: str = "eleven_v3")
+      # Calcula caracteres a consumir
+
+# Entidades auxiliares (tts_service_elevenlabs.py):
+@dataclass
+class Letra:
+   orden: int; letra: str; timestamp_inicio: float; timestamp_fin: float
+@dataclass
+class Palabra:
+   orden: int; palabra: str; timestamp_inicio: float; timestamp_fin: float
 
 # scene_generation_service.py
 class SceneGenerationService:
@@ -126,8 +161,14 @@ class TextAnalyzer:
    def suggest_scene_breaks(texto: str) -> List[int]
 
 ## Tech Stack (Local, No GPU)
-# TTS: Piper (fast) - CONFIRMED STRATEGY
+
+# TTS: Piper (local, rápido, con caché) - IMPLEMENTADO
 pip install piper-tts
+
+
+# TTS ElevenLabs (cloud, alineación) - IMPLEMENTADO
+# Requiere API key ElevenLabs
+# Devuelve alineación carácter y palabra
 
 # STT: Whisper.cpp (CPU optimized) - CONFIRMED STRATEGY
 # Using small model (244MB) for optimal balance of speed/accuracy

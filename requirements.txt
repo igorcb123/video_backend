@@ -4,24 +4,15 @@ uvicorn==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
-# Local TTS/STT (CPU optimized)
-piper-tts==1.2.0
-whisper-cpp-python==0.1.0
-# Alternative: vosk==0.3.45
-
-# Text processing
-spacy==3.7.2
-nltk==3.8.1
-regex==2023.10.3
-
 # Audio processing
 librosa==0.10.1
 soundfile==0.12.1
-pydub==0.25.1
-
-# ML/LLM
-ollama==0.1.8
 numpy==1.24.3
+
+# Utils
+python-multipart==0.0.6
+python-dotenv==1.0.0
+requests
 
 # Development
 pytest==7.4.3
@@ -29,7 +20,3 @@ black==23.11.0
 isort==5.12.0
 flake8==6.1.0
 mypy==1.7.1
-
-# Utils
-python-multipart==0.0.6
-python-dotenv==1.0.0

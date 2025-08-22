@@ -9,7 +9,7 @@ REM Agregar todos los cambios al área de preparación
 git add .
 
 REM Solicitar un mensaje de commit al usuario
-set /p commitMessage="Introduce el mensaje del commit: "
+set /p commitMessage="Resume el cambio: "
 
 REM Crear el commit con el mensaje proporcionado
 git commit -m "%commitMessage%"

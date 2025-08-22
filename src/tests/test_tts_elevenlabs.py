@@ -29,8 +29,7 @@ def test_elevenlabs_tts_with_debug():
         return
     
     # Texto más corto para la prueba
-    text = "Hola, esta es una prueba corta."
-    
+    text = "[curious] ¿Sabías que, aun en medio de la oscuridad, la voz de la fe sigue viva? [excited] La Palabra dice: *“Levántate y resplandece, porque ha venido tu luz, y la gloria de Jehová ha nacido sobre ti”* (Isaías 60:1)."
     print(f"\n📝 Texto a sintetizar: '{text}'")
     estimated_characters = tts.estimate_cost(text)
     
@@ -51,7 +50,9 @@ def test_elevenlabs_tts_with_debug():
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
         output_path = tmp.name
     
-    result = tts.synthesize(text, output_path, model_id="eleven_multilingual_v2")
+    result = tts.synthesize(text, output_path, model_id="eleven_v3",
+                            similarity_boost=0.8
+                            )
     
     if result is not None:
         if os.path.exists(output_path):
@@ -62,6 +63,29 @@ def test_elevenlabs_tts_with_debug():
             print(f"❌ ERROR: El archivo no fue creado aunque la API respondió OK")
     else:
         print(f"❌ ERROR: La síntesis falló")
+def test_elevenlabs_synthesize_with_timestamps():
+    import os
+    import tempfile
+    from services.tts_service_elevenlabs import ElevenLabsTTSService
+
+    api_key = os.getenv("ELEVENLABS_API_KEY", "")
+    if not api_key:
+        print("❌ ERROR: Debes definir la variable de entorno ELEVENLABS_API_KEY")
+        return
+
+    voice_id = "ODrAZ5do9kWmKe8ZDNRB"  # Cambia por una voz válida si es necesario
+    tts = ElevenLabsTTSService(api_key=api_key, voice_id=voice_id)
+    text = "Hola mundo, esto es una prueba de alineación de letras y palabras."
+
+    with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
+        output_path = tmp.name
+
+    result = tts.synthesize_with_timestamps(text, output_path, model_id="eleven_v3", similarity_boost=0.8)
+
+    assert result["audio_path"] is not None and os.path.exists(result["audio_path"]), "No se generó el archivo de audio"
+    assert len(result["letras"]) > 0, "No se obtuvieron letras"
+    assert len(result["palabras"]) > 0, "No se obtuvieron palabras"
+    print("✅ Prueba de synthesize_with_timestamps exitosa")
 
 if __name__ == "__main__":
-    test_elevenlabs_tts_with_debug()
+    test_elevenlabs_synthesize_with_timestamps()
