@@ -30,11 +30,13 @@ venv/
 ENV/
 env/
 
+
 # VS Code
 .vscode/
 
 # Pytest
 .cache/
+.temp/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
