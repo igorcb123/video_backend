@@ -126,11 +126,14 @@ class TextAnalyzer:
    def suggest_scene_breaks(texto: str) -> List[int]
 
 ## Tech Stack (Local, No GPU)
-# TTS: Piper (fast) or Coqui (flexible)
+# TTS: Piper (fast) - CONFIRMED STRATEGY
 pip install piper-tts
 
-# STT: Whisper.cpp (CPU optimized) or Vosk (lightweight)  
+# STT: Whisper.cpp (CPU optimized) - CONFIRMED STRATEGY
+# Using small model (244MB) for optimal balance of speed/accuracy
+# Provides word-level timestamps essential for video sync
 pip install whisper-cpp-python
+# Model auto-download: whisper-small.bin (~244MB)
 
 # Text: spaCy small models, NLTK, regex
 pip install spacy && python -m spacy download es_core_news_sm
@@ -139,16 +142,18 @@ pip install spacy && python -m spacy download es_core_news_sm
 pip install librosa soundfile pydub
 
 ## Environment Variables
-TTS_ENGINE=piper          # piper|coqui
+TTS_ENGINE=piper          # CONFIRMED: piper only
 TTS_MODEL_PATH=./models/tts/
-STT_ENGINE=whisper_cpp    # whisper_cpp|vosk  
-STT_MODEL=small           # tiny|base|small
+STT_ENGINE=whisper_cpp    # CONFIRMED: whisper_cpp only
+STT_MODEL=small           # CONFIRMED: small model (244MB, optimal balance)
+STT_LANGUAGE=es           # Spanish language code
 MAX_WORKERS=4             # Parallel processing
 CACHE_ENABLED=true        # Reuse TTS/STT results
 
 ## Performance Optimizations
-- Cache identical TTS/STT results
-- Parallel processing with workers
-- Lazy load models on demand
-- Stream large files
-- Use small ML models (es_core_news_sm, whisper-small)
+- Cache identical TTS/STT results using content hash
+- Lazy load Whisper model (load once, reuse)
+- Parallel processing for multiple audio files
+- Use Whisper small model: fast + accurate + word timestamps
+- Audio preprocessing: normalize volume/sample rate for STT
+- Smart caching: same text = reuse previous TTS+STT results

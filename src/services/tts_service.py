@@ -112,6 +112,12 @@ class TTSService:
                 capture_output=True,
                 check=True
             )
+            print("\n🔧 Debug: Piper Command")
+            print(" ".join(cmd))
+            print("🔧 Debug: Piper Output")
+            print(process.stdout)
+            print("🔧 Debug: Piper Errors")
+            print(process.stderr)
         except subprocess.CalledProcessError as e:
             raise RuntimeError(f"Piper synthesis failed: {e.stderr}")
         except FileNotFoundError:
