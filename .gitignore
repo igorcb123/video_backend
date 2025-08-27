@@ -57,3 +57,10 @@ env/
 
 # Windows
 Thumbs.db
+
+# Allow tracking of specific TTS wavs for Igor inside models/tts
+# We ignore the rest of `models/` but explicitly unignore the directory
+# and the `igor-*.wav` files so they can be added and pushed.
+!models/
+!models/tts/
+!models/tts/igor-*.wav
