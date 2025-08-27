@@ -1,8 +1,9 @@
 """
 Módulo de definición de la clase Palabra.
 """
-from typing import Optional
+from dataclasses import dataclass
 
+@dataclass
 class Palabra:
     """
     Clase que representa una palabra dentro de un proyecto, con información de tiempo.
@@ -13,21 +14,15 @@ class Palabra:
         timestamp_inicio (float): Momento de inicio (en segundos).
         timestamp_fin (float): Momento de fin (en segundos).
     """
-    def __init__(
-        self,
-        orden: int,
-        palabra: str,
-        timestamp_inicio: float,
-        timestamp_fin: float
-    ):
-        self.orden = orden
-        self.palabra = palabra
-        self.timestamp_inicio = timestamp_inicio
-        self.timestamp_fin = timestamp_fin
-        
+    orden: int
+    palabra: str
+    timestamp_inicio: float
+    timestamp_fin: float
+
+    def __post_init__(self):
         # Validación básica
-        if timestamp_fin < timestamp_inicio:
-            raise ValueError(f"timestamp_fin ({timestamp_fin}) debe ser >= timestamp_inicio ({timestamp_inicio})")
+        if self.timestamp_fin < self.timestamp_inicio:
+            raise ValueError(f"timestamp_fin ({self.timestamp_fin}) debe ser >= timestamp_inicio ({self.timestamp_inicio})")
 
     def duracion(self) -> float:
         """

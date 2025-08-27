@@ -3,50 +3,31 @@
 import subprocess
 import json
 from pathlib import Path
-from typing import Literal, Optional, Dict, List
-from pydantic import BaseModel
-from dataclasses import dataclass
+from typing import Literal, Optional, Dict, List, Union
+from services.tts_cacher import TTSCacher
+# Shared models for TTS alignment and audio info
+import torch  # GPU availability
+from models.letra import Letra
+from models.palabra import Palabra
+from models.audio_info import AudioInfo
+
+from config.settings import settings
+# TTSCacher already imported above
 
 try:
-    from ..config.settings import settings
-except ImportError:
-    from config.settings import settings
-from .tts_cacher import TTSCacher
-
-try:
-    from .forced_alignment import WhisperAlignmentProcessor, SimpleAlignmentProcessor
+    from services.forced_alignment import WhisperAlignmentProcessor, SimpleAlignmentProcessor
 except ImportError:
     WhisperAlignmentProcessor = None
     SimpleAlignmentProcessor = None
 
-# Entidades para alineación (compatibles con ElevenLabs)
-@dataclass
-class Letra:
-    orden: int
-    letra: str
-    timestamp_inicio: float
-    timestamp_fin: float
-
-@dataclass
-class Palabra:
-    orden: int
-    palabra: str
-    timestamp_inicio: float
-    timestamp_fin: float
-
-class AudioInfo(BaseModel):
-    """Audio file information."""
-    
-    file_path: str
-    duration: float
-    sample_rate: int
-    channels: int
-    file_size: int
 
 class TTSService:
     """Local Text-to-Speech service con forced alignment, API compatible con ElevenLabsTTSService."""
     
     def __init__(self, engine: Literal["piper", "coqui"] = "piper"):
+        # Para cachear el último speaker_wav procesado
+        self._last_speaker_wav_path = None
+        self._last_speaker_wav_src = None
         self.engine = engine
         self.model_path = settings.tts_model_path
         self.cache_enabled = settings.cache_enabled
@@ -119,10 +100,12 @@ class TTSService:
 
         output_file.parent.mkdir(parents=True, exist_ok=True)
 
+        # Extraer parámetro para Coqui si se proporciona
+        coqui_voice_wav = kwargs.get("coqui_voice_wav")
         if self.engine == "piper":
             self._synthesize_with_piper(text, str(output_file))
         elif self.engine == "coqui":
-            self._synthesize_with_coqui(text, str(output_file))
+            self._synthesize_with_coqui(text, str(output_file), coqui_voice_wav)
         else:
             raise ValueError(f"Unsupported TTS engine: {self.engine}")
 
@@ -233,12 +216,134 @@ class TTSService:
         except FileNotFoundError:
             raise RuntimeError("Piper not found. Install with: pip install piper-tts")
     
-    def _synthesize_with_coqui(self, text: str, output_path: str) -> None:
-        """Synthesize using Coqui TTS."""
+    def _synthesize_with_coqui(
+        self,
+        text: str,
+        output_path: str,
+        speaker_wav: Union[str, List[str], None] = None,
+        speaker_id: Optional[str] = "igor_cache",
+        temperature: float = 0.85,
+        repetition_penalty: float = 1.1,
+        speed: float = 1.0,
+        split_sentences: Optional[bool] = None,
+        language: str = "es",
+    ) -> None:
+        """Synthesize using Coqui TTS (XTTS v2, voice cloning). Soporta múltiples referencias para mejor clonación de voz."""
+        
         try:
-            raise NotImplementedError("Coqui TTS integration pending")
+            from TTS.api import TTS
+        except ImportError:
+            raise RuntimeError("TTS library not found. Install with: pip install TTS")
+        try:
+            import librosa
+            import soundfile as sf
+        except ImportError:
+            raise RuntimeError("Se requiere librosa y soundfile para procesar el audio. Instala con: pip install librosa soundfile")
+        import tempfile
+        
+        # Configurar torch para permitir carga de modelos Coqui TTS (PyTorch 2.6+)
+        import os
+        # Temporal fix para PyTorch 2.6: deshabilitar weights_only por defecto para TTS
+        os.environ.setdefault('TORCH_SERIALIZATION_WEIGHTS_ONLY', 'False')
+
+        # Modelo multilingüe con voice cloning
+        model_name = "tts_models/multilingual/multi-dataset/xtts_v2"
+
+        # Helper function to prepare speaker wav files for optimal voice cloning
+        def prepare_speaker_wav(input_path: str) -> str:
+            """Prepara un archivo de audio para voice cloning optimizado: 24kHz, mono, PCM_16, max 6s."""
+            y, sr = librosa.load(input_path, sr=24000, mono=True)
+            max_sec = 6.0
+            # Usar los últimos 6 segundos para mejor calidad
+            if librosa.get_duration(y=y, sr=sr) > max_sec:
+                start_sample = int((librosa.get_duration(y=y, sr=sr) - max_sec) * sr)
+                y = y[start_sample:]
+            
+            tmp_wav = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
+            sf.write(tmp_wav.name, y, sr, subtype="PCM_16")
+            tmp_wav.close()
+            return tmp_wav.name
+
+        # Helper function to build and process reference list
+        def build_reference_list(speaker_wav: Union[str, List[str], None]) -> List[str]:
+            """Construye y procesa la lista de archivos de referencia para voice cloning."""
+            # Archivos de referencia por defecto (voces de Igor con diferentes emociones)
+            default_references = [
+                str(Path(__file__).parent.parent.parent / "models" / "tts" / "igor-neutral.wav"),
+                str(Path(__file__).parent.parent.parent / "models" / "tts" / "igor-calma.wav"),
+                str(Path(__file__).parent.parent.parent / "models" / "tts" / "igor-alegria.wav"),
+                str(Path(__file__).parent.parent.parent / "models" / "tts" / "igor-pensativo.wav"),
+                str(Path(__file__).parent.parent.parent / "models" / "tts" / "igor-enojo.wav"),
+            ]
+            
+            # Filtrar referencias por defecto que existen
+            existing_defaults = [p for p in default_references if Path(p).exists()]
+            
+            # Si no se proporciona speaker_wav, usar referencias por defecto
+            if speaker_wav is None:
+                return existing_defaults
+            
+            # Procesar speaker_wav proporcionado
+            if isinstance(speaker_wav, str):
+                # Un solo archivo de referencia
+                if Path(speaker_wav).exists():
+                    processed_wav = prepare_speaker_wav(speaker_wav)
+                    # Combinar con las referencias por defecto para mejor clonación
+                    return [processed_wav] + existing_defaults[:2]  # Archivo principal + 2 refs por defecto
+                else:
+                    print(f"⚠️  Archivo de referencia no encontrado: {speaker_wav}, usando referencias por defecto")
+                    return existing_defaults
+            elif isinstance(speaker_wav, list):
+                # Múltiples archivos de referencia
+                processed_wavs = []
+                for wav_path in speaker_wav:
+                    if Path(wav_path).exists():
+                        processed_wavs.append(prepare_speaker_wav(wav_path))
+                    else:
+                        print(f"⚠️  Archivo de referencia no encontrado: {wav_path}")
+                
+                if processed_wavs:
+                    # Combinar archivos procesados con algunas referencias por defecto
+                    return processed_wavs + existing_defaults[:2]
+                else:
+                    print("⚠️  Ningún archivo de referencia válido encontrado, usando referencias por defecto")
+                    return existing_defaults
+            
+            return existing_defaults
+
+        # Construir lista de referencias optimizada
+        reference_files = build_reference_list(speaker_wav)
+        
+        print(f"🎙️  Usando {len(reference_files)} archivos de referencia para voice cloning")
+        for i, ref_file in enumerate(reference_files[:3], 1):  # Mostrar solo los primeros 3
+            print(f"   {i}. {Path(ref_file).name}")
+        if len(reference_files) > 3:
+            print(f"   ... y {len(reference_files) - 3} más")
+
+        use_gpu = torch.cuda.is_available()
+        tts = TTS(model_name=model_name, progress_bar=False, gpu=use_gpu)
+        try:
+            # Usar múltiples referencias para mejor voice cloning
+            tts.tts_to_file(
+                text=text,
+                speaker_wav=reference_files,  # Lista de múltiples referencias
+                file_path=output_path,
+                language=language,
+                speed=speed,
+                temperature=temperature,
+                repetition_penalty=repetition_penalty,
+                split_sentences=split_sentences,
+            )
         except Exception as e:
             raise RuntimeError(f"Coqui synthesis failed: {e}")
+        
+        # Cleanup temporal files if any were created
+        for ref_file in reference_files:
+            if "tmp" in ref_file and Path(ref_file).exists():
+                try:
+                    Path(ref_file).unlink()
+                except Exception:
+                    pass
     
     def _get_audio_info(self, file_path: str) -> AudioInfo:
         """Extract audio file information."""

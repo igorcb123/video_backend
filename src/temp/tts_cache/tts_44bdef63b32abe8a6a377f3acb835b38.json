@@ -1,0 +1,271 @@
+{
+  "letras": [
+    {
+      "orden": 0,
+      "letra": "T",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.1305438596491228
+    },
+    {
+      "orden": 1,
+      "letra": "e",
+      "timestamp_inicio": 0.1305438596491228,
+      "timestamp_fin": 0.2610877192982456
+    },
+    {
+      "orden": 2,
+      "letra": "s",
+      "timestamp_inicio": 0.2610877192982456,
+      "timestamp_fin": 0.3916315789473684
+    },
+    {
+      "orden": 3,
+      "letra": "t",
+      "timestamp_inicio": 0.3916315789473684,
+      "timestamp_fin": 0.5221754385964912
+    },
+    {
+      "orden": 4,
+      "letra": " ",
+      "timestamp_inicio": 0.5221754385964912,
+      "timestamp_fin": 0.652719298245614
+    },
+    {
+      "orden": 5,
+      "letra": "d",
+      "timestamp_inicio": 0.652719298245614,
+      "timestamp_fin": 0.7832631578947368
+    },
+    {
+      "orden": 6,
+      "letra": "e",
+      "timestamp_inicio": 0.7832631578947368,
+      "timestamp_fin": 0.9138070175438595
+    },
+    {
+      "orden": 7,
+      "letra": "l",
+      "timestamp_inicio": 0.9138070175438595,
+      "timestamp_fin": 1.0443508771929824
+    },
+    {
+      "orden": 8,
+      "letra": " ",
+      "timestamp_inicio": 1.0443508771929824,
+      "timestamp_fin": 1.1748947368421052
+    },
+    {
+      "orden": 9,
+      "letra": "o",
+      "timestamp_inicio": 1.1748947368421052,
+      "timestamp_fin": 1.305438596491228
+    },
+    {
+      "orden": 10,
+      "letra": "r",
+      "timestamp_inicio": 1.305438596491228,
+      "timestamp_fin": 1.4359824561403507
+    },
+    {
+      "orden": 11,
+      "letra": "q",
+      "timestamp_inicio": 1.4359824561403507,
+      "timestamp_fin": 1.5665263157894735
+    },
+    {
+      "orden": 12,
+      "letra": "u",
+      "timestamp_inicio": 1.5665263157894735,
+      "timestamp_fin": 1.6970701754385964
+    },
+    {
+      "orden": 13,
+      "letra": "e",
+      "timestamp_inicio": 1.6970701754385964,
+      "timestamp_fin": 1.827614035087719
+    },
+    {
+      "orden": 14,
+      "letra": "s",
+      "timestamp_inicio": 1.827614035087719,
+      "timestamp_fin": 1.9581578947368419
+    },
+    {
+      "orden": 15,
+      "letra": "t",
+      "timestamp_inicio": 1.9581578947368419,
+      "timestamp_fin": 2.0887017543859647
+    },
+    {
+      "orden": 16,
+      "letra": "a",
+      "timestamp_inicio": 2.0887017543859647,
+      "timestamp_fin": 2.2192456140350876
+    },
+    {
+      "orden": 17,
+      "letra": "d",
+      "timestamp_inicio": 2.2192456140350876,
+      "timestamp_fin": 2.3497894736842104
+    },
+    {
+      "orden": 18,
+      "letra": "o",
+      "timestamp_inicio": 2.3497894736842104,
+      "timestamp_fin": 2.4803333333333333
+    },
+    {
+      "orden": 19,
+      "letra": "r",
+      "timestamp_inicio": 2.4803333333333333,
+      "timestamp_fin": 2.610877192982456
+    },
+    {
+      "orden": 20,
+      "letra": " ",
+      "timestamp_inicio": 2.610877192982456,
+      "timestamp_fin": 2.7414210526315785
+    },
+    {
+      "orden": 21,
+      "letra": "T",
+      "timestamp_inicio": 2.7414210526315785,
+      "timestamp_fin": 2.8719649122807014
+    },
+    {
+      "orden": 22,
+      "letra": "T",
+      "timestamp_inicio": 2.8719649122807014,
+      "timestamp_fin": 3.0025087719298242
+    },
+    {
+      "orden": 23,
+      "letra": "S",
+      "timestamp_inicio": 3.0025087719298242,
+      "timestamp_fin": 3.133052631578947
+    },
+    {
+      "orden": 24,
+      "letra": " ",
+      "timestamp_inicio": 3.133052631578947,
+      "timestamp_fin": 3.26359649122807
+    },
+    {
+      "orden": 25,
+      "letra": "u",
+      "timestamp_inicio": 3.26359649122807,
+      "timestamp_fin": 3.394140350877193
+    },
+    {
+      "orden": 26,
+      "letra": "s",
+      "timestamp_inicio": 3.394140350877193,
+      "timestamp_fin": 3.5246842105263156
+    },
+    {
+      "orden": 27,
+      "letra": "a",
+      "timestamp_inicio": 3.5246842105263156,
+      "timestamp_fin": 3.655228070175438
+    },
+    {
+      "orden": 28,
+      "letra": "n",
+      "timestamp_inicio": 3.655228070175438,
+      "timestamp_fin": 3.785771929824561
+    },
+    {
+      "orden": 29,
+      "letra": "d",
+      "timestamp_inicio": 3.785771929824561,
+      "timestamp_fin": 3.9163157894736838
+    },
+    {
+      "orden": 30,
+      "letra": "o",
+      "timestamp_inicio": 3.9163157894736838,
+      "timestamp_fin": 4.046859649122807
+    },
+    {
+      "orden": 31,
+      "letra": " ",
+      "timestamp_inicio": 4.046859649122807,
+      "timestamp_fin": 4.1774035087719295
+    },
+    {
+      "orden": 32,
+      "letra": "c",
+      "timestamp_inicio": 4.1774035087719295,
+      "timestamp_fin": 4.307947368421052
+    },
+    {
+      "orden": 33,
+      "letra": "o",
+      "timestamp_inicio": 4.307947368421052,
+      "timestamp_fin": 4.438491228070175
+    },
+    {
+      "orden": 34,
+      "letra": "q",
+      "timestamp_inicio": 4.438491228070175,
+      "timestamp_fin": 4.569035087719298
+    },
+    {
+      "orden": 35,
+      "letra": "u",
+      "timestamp_inicio": 4.569035087719298,
+      "timestamp_fin": 4.699578947368421
+    },
+    {
+      "orden": 36,
+      "letra": "i",
+      "timestamp_inicio": 4.699578947368421,
+      "timestamp_fin": 4.830122807017544
+    },
+    {
+      "orden": 37,
+      "letra": ".",
+      "timestamp_inicio": 4.830122807017544,
+      "timestamp_fin": 4.960666666666667
+    }
+  ],
+  "palabras": [
+    {
+      "orden": 0,
+      "palabra": "Test",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.8267777777777777
+    },
+    {
+      "orden": 1,
+      "palabra": "del",
+      "timestamp_inicio": 0.8267777777777777,
+      "timestamp_fin": 1.6535555555555554
+    },
+    {
+      "orden": 2,
+      "palabra": "orquestador",
+      "timestamp_inicio": 1.6535555555555554,
+      "timestamp_fin": 2.4803333333333333
+    },
+    {
+      "orden": 3,
+      "palabra": "TTS",
+      "timestamp_inicio": 2.4803333333333333,
+      "timestamp_fin": 3.307111111111111
+    },
+    {
+      "orden": 4,
+      "palabra": "usando",
+      "timestamp_inicio": 3.307111111111111,
+      "timestamp_fin": 4.1338888888888885
+    },
+    {
+      "orden": 5,
+      "palabra": "coqui.",
+      "timestamp_inicio": 4.1338888888888885,
+      "timestamp_fin": 4.960666666666667
+    }
+  ],
+  "method": "simple"
+}

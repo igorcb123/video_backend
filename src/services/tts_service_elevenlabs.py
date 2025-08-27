@@ -1,23 +1,10 @@
-from dataclasses import dataclass
 import base64
 from typing import List, Dict, Optional
 from pathlib import Path
 from .tts_cacher import TTSCacher
-
-# Nuevas entidades para alineación
-@dataclass
-class Letra:
-    orden: int
-    letra: str
-    timestamp_inicio: float
-    timestamp_fin: float
-
-@dataclass
-class Palabra:
-    orden: int
-    palabra: str
-    timestamp_inicio: float
-    timestamp_fin: float
+# Shared models for alignment
+from ..models.letra import Letra
+from ..models.palabra import Palabra
 
 import requests
 from typing import Optional
@@ -134,9 +121,13 @@ class ElevenLabsTTSService:
     Servicio TTS usando la API de ElevenLabs con debugging mejorado.
     """
     def __init__(self, api_key: str, voice_id: str = "EXAVITQu4vr4xnSDxMaL"):
+        """Servicio TTS usando la API de ElevenLabs con debugging mejorado."""
         self.api_key = api_key
         self.voice_id = voice_id
         self.base_url = "https://api.elevenlabs.io/v1"
+        # Inicializar caché en temp/tts_cache
+        cache_dir = Path("temp/tts_cache")
+        self._cacher = TTSCacher(cache_dir)
 
     def check_subscription_info(self):
         """Verifica información de la suscripción y créditos disponibles."""

@@ -1,0 +1,487 @@
+{
+  "letras": [
+    {
+      "orden": 0,
+      "letra": "E",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.08738235294117647
+    },
+    {
+      "orden": 1,
+      "letra": "l",
+      "timestamp_inicio": 0.08738235294117647,
+      "timestamp_fin": 0.17476470588235293
+    },
+    {
+      "orden": 2,
+      "letra": " ",
+      "timestamp_inicio": 0.17476470588235293,
+      "timestamp_fin": 0.2621470588235294
+    },
+    {
+      "orden": 3,
+      "letra": "p",
+      "timestamp_inicio": 0.2621470588235294,
+      "timestamp_fin": 0.34952941176470587
+    },
+    {
+      "orden": 4,
+      "letra": "r",
+      "timestamp_inicio": 0.34952941176470587,
+      "timestamp_fin": 0.43691176470588233
+    },
+    {
+      "orden": 5,
+      "letra": "i",
+      "timestamp_inicio": 0.43691176470588233,
+      "timestamp_fin": 0.5242941176470588
+    },
+    {
+      "orden": 6,
+      "letra": "n",
+      "timestamp_inicio": 0.5242941176470588,
+      "timestamp_fin": 0.6116764705882353
+    },
+    {
+      "orden": 7,
+      "letra": "c",
+      "timestamp_inicio": 0.6116764705882353,
+      "timestamp_fin": 0.6990588235294117
+    },
+    {
+      "orden": 8,
+      "letra": "i",
+      "timestamp_inicio": 0.6990588235294117,
+      "timestamp_fin": 0.7864411764705882
+    },
+    {
+      "orden": 9,
+      "letra": "p",
+      "timestamp_inicio": 0.7864411764705882,
+      "timestamp_fin": 0.8738235294117647
+    },
+    {
+      "orden": 10,
+      "letra": "i",
+      "timestamp_inicio": 0.8738235294117647,
+      "timestamp_fin": 0.9612058823529411
+    },
+    {
+      "orden": 11,
+      "letra": "o",
+      "timestamp_inicio": 0.9612058823529411,
+      "timestamp_fin": 1.0485882352941176
+    },
+    {
+      "orden": 12,
+      "letra": " ",
+      "timestamp_inicio": 1.0485882352941176,
+      "timestamp_fin": 1.1359705882352942
+    },
+    {
+      "orden": 13,
+      "letra": "d",
+      "timestamp_inicio": 1.1359705882352942,
+      "timestamp_fin": 1.2233529411764705
+    },
+    {
+      "orden": 14,
+      "letra": "e",
+      "timestamp_inicio": 1.2233529411764705,
+      "timestamp_fin": 1.3107352941176469
+    },
+    {
+      "orden": 15,
+      "letra": " ",
+      "timestamp_inicio": 1.3107352941176469,
+      "timestamp_fin": 1.3981176470588235
+    },
+    {
+      "orden": 16,
+      "letra": "l",
+      "timestamp_inicio": 1.3981176470588235,
+      "timestamp_fin": 1.4855
+    },
+    {
+      "orden": 17,
+      "letra": "a",
+      "timestamp_inicio": 1.4855,
+      "timestamp_fin": 1.5728823529411764
+    },
+    {
+      "orden": 18,
+      "letra": " ",
+      "timestamp_inicio": 1.5728823529411764,
+      "timestamp_fin": 1.6602647058823528
+    },
+    {
+      "orden": 19,
+      "letra": "s",
+      "timestamp_inicio": 1.6602647058823528,
+      "timestamp_fin": 1.7476470588235293
+    },
+    {
+      "orden": 20,
+      "letra": "a",
+      "timestamp_inicio": 1.7476470588235293,
+      "timestamp_fin": 1.835029411764706
+    },
+    {
+      "orden": 21,
+      "letra": "b",
+      "timestamp_inicio": 1.835029411764706,
+      "timestamp_fin": 1.9224117647058823
+    },
+    {
+      "orden": 22,
+      "letra": "i",
+      "timestamp_inicio": 1.9224117647058823,
+      "timestamp_fin": 2.0097941176470586
+    },
+    {
+      "orden": 23,
+      "letra": "d",
+      "timestamp_inicio": 2.0097941176470586,
+      "timestamp_fin": 2.097176470588235
+    },
+    {
+      "orden": 24,
+      "letra": "u",
+      "timestamp_inicio": 2.097176470588235,
+      "timestamp_fin": 2.1845588235294118
+    },
+    {
+      "orden": 25,
+      "letra": "r",
+      "timestamp_inicio": 2.1845588235294118,
+      "timestamp_fin": 2.2719411764705884
+    },
+    {
+      "orden": 26,
+      "letra": "í",
+      "timestamp_inicio": 2.2719411764705884,
+      "timestamp_fin": 2.3593235294117645
+    },
+    {
+      "orden": 27,
+      "letra": "a",
+      "timestamp_inicio": 2.3593235294117645,
+      "timestamp_fin": 2.446705882352941
+    },
+    {
+      "orden": 28,
+      "letra": " ",
+      "timestamp_inicio": 2.446705882352941,
+      "timestamp_fin": 2.5340882352941176
+    },
+    {
+      "orden": 29,
+      "letra": "e",
+      "timestamp_inicio": 2.5340882352941176,
+      "timestamp_fin": 2.6214705882352938
+    },
+    {
+      "orden": 30,
+      "letra": "s",
+      "timestamp_inicio": 2.6214705882352938,
+      "timestamp_fin": 2.7088529411764704
+    },
+    {
+      "orden": 31,
+      "letra": " ",
+      "timestamp_inicio": 2.7088529411764704,
+      "timestamp_fin": 2.796235294117647
+    },
+    {
+      "orden": 32,
+      "letra": "e",
+      "timestamp_inicio": 2.796235294117647,
+      "timestamp_fin": 2.8836176470588235
+    },
+    {
+      "orden": 33,
+      "letra": "l",
+      "timestamp_inicio": 2.8836176470588235,
+      "timestamp_fin": 2.971
+    },
+    {
+      "orden": 34,
+      "letra": " ",
+      "timestamp_inicio": 2.971,
+      "timestamp_fin": 3.058382352941176
+    },
+    {
+      "orden": 35,
+      "letra": "t",
+      "timestamp_inicio": 3.058382352941176,
+      "timestamp_fin": 3.145764705882353
+    },
+    {
+      "orden": 36,
+      "letra": "e",
+      "timestamp_inicio": 3.145764705882353,
+      "timestamp_fin": 3.2331470588235294
+    },
+    {
+      "orden": 37,
+      "letra": "m",
+      "timestamp_inicio": 3.2331470588235294,
+      "timestamp_fin": 3.3205294117647055
+    },
+    {
+      "orden": 38,
+      "letra": "o",
+      "timestamp_inicio": 3.3205294117647055,
+      "timestamp_fin": 3.407911764705882
+    },
+    {
+      "orden": 39,
+      "letra": "r",
+      "timestamp_inicio": 3.407911764705882,
+      "timestamp_fin": 3.4952941176470587
+    },
+    {
+      "orden": 40,
+      "letra": " ",
+      "timestamp_inicio": 3.4952941176470587,
+      "timestamp_fin": 3.5826764705882352
+    },
+    {
+      "orden": 41,
+      "letra": "d",
+      "timestamp_inicio": 3.5826764705882352,
+      "timestamp_fin": 3.670058823529412
+    },
+    {
+      "orden": 42,
+      "letra": "e",
+      "timestamp_inicio": 3.670058823529412,
+      "timestamp_fin": 3.757441176470588
+    },
+    {
+      "orden": 43,
+      "letra": " ",
+      "timestamp_inicio": 3.757441176470588,
+      "timestamp_fin": 3.8448235294117645
+    },
+    {
+      "orden": 44,
+      "letra": "J",
+      "timestamp_inicio": 3.8448235294117645,
+      "timestamp_fin": 3.932205882352941
+    },
+    {
+      "orden": 45,
+      "letra": "e",
+      "timestamp_inicio": 3.932205882352941,
+      "timestamp_fin": 4.019588235294117
+    },
+    {
+      "orden": 46,
+      "letra": "h",
+      "timestamp_inicio": 4.019588235294117,
+      "timestamp_fin": 4.106970588235294
+    },
+    {
+      "orden": 47,
+      "letra": "o",
+      "timestamp_inicio": 4.106970588235294,
+      "timestamp_fin": 4.19435294117647
+    },
+    {
+      "orden": 48,
+      "letra": "v",
+      "timestamp_inicio": 4.19435294117647,
+      "timestamp_fin": 4.281735294117647
+    },
+    {
+      "orden": 49,
+      "letra": "á",
+      "timestamp_inicio": 4.281735294117647,
+      "timestamp_fin": 4.3691176470588236
+    },
+    {
+      "orden": 50,
+      "letra": ".",
+      "timestamp_inicio": 4.3691176470588236,
+      "timestamp_fin": 4.4565
+    },
+    {
+      "orden": 51,
+      "letra": " ",
+      "timestamp_inicio": 4.4565,
+      "timestamp_fin": 4.543882352941177
+    },
+    {
+      "orden": 52,
+      "letra": "(",
+      "timestamp_inicio": 4.543882352941177,
+      "timestamp_fin": 4.631264705882352
+    },
+    {
+      "orden": 53,
+      "letra": "P",
+      "timestamp_inicio": 4.631264705882352,
+      "timestamp_fin": 4.718647058823529
+    },
+    {
+      "orden": 54,
+      "letra": "r",
+      "timestamp_inicio": 4.718647058823529,
+      "timestamp_fin": 4.8060294117647056
+    },
+    {
+      "orden": 55,
+      "letra": "o",
+      "timestamp_inicio": 4.8060294117647056,
+      "timestamp_fin": 4.893411764705882
+    },
+    {
+      "orden": 56,
+      "letra": "v",
+      "timestamp_inicio": 4.893411764705882,
+      "timestamp_fin": 4.980794117647059
+    },
+    {
+      "orden": 57,
+      "letra": "e",
+      "timestamp_inicio": 4.980794117647059,
+      "timestamp_fin": 5.068176470588235
+    },
+    {
+      "orden": 58,
+      "letra": "r",
+      "timestamp_inicio": 5.068176470588235,
+      "timestamp_fin": 5.155558823529412
+    },
+    {
+      "orden": 59,
+      "letra": "b",
+      "timestamp_inicio": 5.155558823529412,
+      "timestamp_fin": 5.2429411764705875
+    },
+    {
+      "orden": 60,
+      "letra": "i",
+      "timestamp_inicio": 5.2429411764705875,
+      "timestamp_fin": 5.330323529411764
+    },
+    {
+      "orden": 61,
+      "letra": "o",
+      "timestamp_inicio": 5.330323529411764,
+      "timestamp_fin": 5.417705882352941
+    },
+    {
+      "orden": 62,
+      "letra": "s",
+      "timestamp_inicio": 5.417705882352941,
+      "timestamp_fin": 5.505088235294117
+    },
+    {
+      "orden": 63,
+      "letra": " ",
+      "timestamp_inicio": 5.505088235294117,
+      "timestamp_fin": 5.592470588235294
+    },
+    {
+      "orden": 64,
+      "letra": "1",
+      "timestamp_inicio": 5.592470588235294,
+      "timestamp_fin": 5.67985294117647
+    },
+    {
+      "orden": 65,
+      "letra": ":",
+      "timestamp_inicio": 5.67985294117647,
+      "timestamp_fin": 5.767235294117647
+    },
+    {
+      "orden": 66,
+      "letra": "7",
+      "timestamp_inicio": 5.767235294117647,
+      "timestamp_fin": 5.854617647058824
+    },
+    {
+      "orden": 67,
+      "letra": ")",
+      "timestamp_inicio": 5.854617647058824,
+      "timestamp_fin": 5.942
+    }
+  ],
+  "palabras": [
+    {
+      "orden": 0,
+      "palabra": "El",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.4951666666666667
+    },
+    {
+      "orden": 1,
+      "palabra": "principio",
+      "timestamp_inicio": 0.4951666666666667,
+      "timestamp_fin": 0.9903333333333334
+    },
+    {
+      "orden": 2,
+      "palabra": "de",
+      "timestamp_inicio": 0.9903333333333334,
+      "timestamp_fin": 1.4855
+    },
+    {
+      "orden": 3,
+      "palabra": "la",
+      "timestamp_inicio": 1.4855,
+      "timestamp_fin": 1.9806666666666668
+    },
+    {
+      "orden": 4,
+      "palabra": "sabiduría",
+      "timestamp_inicio": 1.9806666666666668,
+      "timestamp_fin": 2.4758333333333336
+    },
+    {
+      "orden": 5,
+      "palabra": "es",
+      "timestamp_inicio": 2.4758333333333336,
+      "timestamp_fin": 2.971
+    },
+    {
+      "orden": 6,
+      "palabra": "el",
+      "timestamp_inicio": 2.971,
+      "timestamp_fin": 3.466166666666667
+    },
+    {
+      "orden": 7,
+      "palabra": "temor",
+      "timestamp_inicio": 3.466166666666667,
+      "timestamp_fin": 3.9613333333333336
+    },
+    {
+      "orden": 8,
+      "palabra": "de",
+      "timestamp_inicio": 3.9613333333333336,
+      "timestamp_fin": 4.4565
+    },
+    {
+      "orden": 9,
+      "palabra": "Jehová.",
+      "timestamp_inicio": 4.4565,
+      "timestamp_fin": 4.951666666666667
+    },
+    {
+      "orden": 10,
+      "palabra": "(Proverbios",
+      "timestamp_inicio": 4.951666666666667,
+      "timestamp_fin": 5.446833333333334
+    },
+    {
+      "orden": 11,
+      "palabra": "1:7)",
+      "timestamp_inicio": 5.446833333333334,
+      "timestamp_fin": 5.942
+    }
+  ],
+  "method": "simple"
+}

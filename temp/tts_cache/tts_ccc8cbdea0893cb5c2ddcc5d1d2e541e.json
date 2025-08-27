@@ -1,0 +1,1057 @@
+{
+  "letras": [
+    {
+      "orden": 0,
+      "letra": "P",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.0034482758620689655
+    },
+    {
+      "orden": 1,
+      "letra": "o",
+      "timestamp_inicio": 0.0034482758620689655,
+      "timestamp_fin": 0.006896551724137931
+    },
+    {
+      "orden": 2,
+      "letra": "r",
+      "timestamp_inicio": 0.006896551724137931,
+      "timestamp_fin": 0.010344827586206896
+    },
+    {
+      "orden": 3,
+      "letra": "q",
+      "timestamp_inicio": 0.010344827586206896,
+      "timestamp_fin": 0.013793103448275862
+    },
+    {
+      "orden": 4,
+      "letra": "u",
+      "timestamp_inicio": 0.013793103448275862,
+      "timestamp_fin": 0.017241379310344827
+    },
+    {
+      "orden": 5,
+      "letra": "e",
+      "timestamp_inicio": 0.017241379310344827,
+      "timestamp_fin": 0.020689655172413793
+    },
+    {
+      "orden": 6,
+      "letra": " ",
+      "timestamp_inicio": 0.020689655172413793,
+      "timestamp_fin": 0.02413793103448276
+    },
+    {
+      "orden": 7,
+      "letra": "d",
+      "timestamp_inicio": 0.02413793103448276,
+      "timestamp_fin": 0.027586206896551724
+    },
+    {
+      "orden": 8,
+      "letra": "e",
+      "timestamp_inicio": 0.027586206896551724,
+      "timestamp_fin": 0.03103448275862069
+    },
+    {
+      "orden": 9,
+      "letra": " ",
+      "timestamp_inicio": 0.03103448275862069,
+      "timestamp_fin": 0.034482758620689655
+    },
+    {
+      "orden": 10,
+      "letra": "t",
+      "timestamp_inicio": 0.034482758620689655,
+      "timestamp_fin": 0.03793103448275862
+    },
+    {
+      "orden": 11,
+      "letra": "a",
+      "timestamp_inicio": 0.03793103448275862,
+      "timestamp_fin": 0.041379310344827586
+    },
+    {
+      "orden": 12,
+      "letra": "l",
+      "timestamp_inicio": 0.041379310344827586,
+      "timestamp_fin": 0.04482758620689655
+    },
+    {
+      "orden": 13,
+      "letra": " ",
+      "timestamp_inicio": 0.04482758620689655,
+      "timestamp_fin": 0.04827586206896552
+    },
+    {
+      "orden": 14,
+      "letra": "m",
+      "timestamp_inicio": 0.04827586206896552,
+      "timestamp_fin": 0.05172413793103448
+    },
+    {
+      "orden": 15,
+      "letra": "a",
+      "timestamp_inicio": 0.05172413793103448,
+      "timestamp_fin": 0.05517241379310345
+    },
+    {
+      "orden": 16,
+      "letra": "n",
+      "timestamp_inicio": 0.05517241379310345,
+      "timestamp_fin": 0.05862068965517241
+    },
+    {
+      "orden": 17,
+      "letra": "e",
+      "timestamp_inicio": 0.05862068965517241,
+      "timestamp_fin": 0.06206896551724138
+    },
+    {
+      "orden": 18,
+      "letra": "r",
+      "timestamp_inicio": 0.06206896551724138,
+      "timestamp_fin": 0.06551724137931034
+    },
+    {
+      "orden": 19,
+      "letra": "a",
+      "timestamp_inicio": 0.06551724137931034,
+      "timestamp_fin": 0.06896551724137931
+    },
+    {
+      "orden": 20,
+      "letra": " ",
+      "timestamp_inicio": 0.06896551724137931,
+      "timestamp_fin": 0.07241379310344828
+    },
+    {
+      "orden": 21,
+      "letra": "a",
+      "timestamp_inicio": 0.07241379310344828,
+      "timestamp_fin": 0.07586206896551724
+    },
+    {
+      "orden": 22,
+      "letra": "m",
+      "timestamp_inicio": 0.07586206896551724,
+      "timestamp_fin": 0.0793103448275862
+    },
+    {
+      "orden": 23,
+      "letra": "o",
+      "timestamp_inicio": 0.0793103448275862,
+      "timestamp_fin": 0.08275862068965517
+    },
+    {
+      "orden": 24,
+      "letra": " ",
+      "timestamp_inicio": 0.08275862068965517,
+      "timestamp_fin": 0.08620689655172414
+    },
+    {
+      "orden": 25,
+      "letra": "D",
+      "timestamp_inicio": 0.08620689655172414,
+      "timestamp_fin": 0.0896551724137931
+    },
+    {
+      "orden": 26,
+      "letra": "i",
+      "timestamp_inicio": 0.0896551724137931,
+      "timestamp_fin": 0.09310344827586206
+    },
+    {
+      "orden": 27,
+      "letra": "o",
+      "timestamp_inicio": 0.09310344827586206,
+      "timestamp_fin": 0.09655172413793103
+    },
+    {
+      "orden": 28,
+      "letra": "s",
+      "timestamp_inicio": 0.09655172413793103,
+      "timestamp_fin": 0.1
+    },
+    {
+      "orden": 29,
+      "letra": " ",
+      "timestamp_inicio": 0.1,
+      "timestamp_fin": 0.10344827586206896
+    },
+    {
+      "orden": 30,
+      "letra": "a",
+      "timestamp_inicio": 0.10344827586206896,
+      "timestamp_fin": 0.10689655172413792
+    },
+    {
+      "orden": 31,
+      "letra": "l",
+      "timestamp_inicio": 0.10689655172413792,
+      "timestamp_fin": 0.1103448275862069
+    },
+    {
+      "orden": 32,
+      "letra": " ",
+      "timestamp_inicio": 0.1103448275862069,
+      "timestamp_fin": 0.11379310344827587
+    },
+    {
+      "orden": 33,
+      "letra": "m",
+      "timestamp_inicio": 0.11379310344827587,
+      "timestamp_fin": 0.11724137931034483
+    },
+    {
+      "orden": 34,
+      "letra": "u",
+      "timestamp_inicio": 0.11724137931034483,
+      "timestamp_fin": 0.12068965517241378
+    },
+    {
+      "orden": 35,
+      "letra": "n",
+      "timestamp_inicio": 0.12068965517241378,
+      "timestamp_fin": 0.12413793103448276
+    },
+    {
+      "orden": 36,
+      "letra": "d",
+      "timestamp_inicio": 0.12413793103448276,
+      "timestamp_fin": 0.12758620689655173
+    },
+    {
+      "orden": 37,
+      "letra": "o",
+      "timestamp_inicio": 0.12758620689655173,
+      "timestamp_fin": 0.13103448275862067
+    },
+    {
+      "orden": 38,
+      "letra": ",",
+      "timestamp_inicio": 0.13103448275862067,
+      "timestamp_fin": 0.13448275862068965
+    },
+    {
+      "orden": 39,
+      "letra": " ",
+      "timestamp_inicio": 0.13448275862068965,
+      "timestamp_fin": 0.13793103448275862
+    },
+    {
+      "orden": 40,
+      "letra": "q",
+      "timestamp_inicio": 0.13793103448275862,
+      "timestamp_fin": 0.1413793103448276
+    },
+    {
+      "orden": 41,
+      "letra": "u",
+      "timestamp_inicio": 0.1413793103448276,
+      "timestamp_fin": 0.14482758620689656
+    },
+    {
+      "orden": 42,
+      "letra": "e",
+      "timestamp_inicio": 0.14482758620689656,
+      "timestamp_fin": 0.1482758620689655
+    },
+    {
+      "orden": 43,
+      "letra": " ",
+      "timestamp_inicio": 0.1482758620689655,
+      "timestamp_fin": 0.15172413793103448
+    },
+    {
+      "orden": 44,
+      "letra": "h",
+      "timestamp_inicio": 0.15172413793103448,
+      "timestamp_fin": 0.15517241379310345
+    },
+    {
+      "orden": 45,
+      "letra": "a",
+      "timestamp_inicio": 0.15517241379310345,
+      "timestamp_fin": 0.1586206896551724
+    },
+    {
+      "orden": 46,
+      "letra": " ",
+      "timestamp_inicio": 0.1586206896551724,
+      "timestamp_fin": 0.16206896551724137
+    },
+    {
+      "orden": 47,
+      "letra": "d",
+      "timestamp_inicio": 0.16206896551724137,
+      "timestamp_fin": 0.16551724137931034
+    },
+    {
+      "orden": 48,
+      "letra": "a",
+      "timestamp_inicio": 0.16551724137931034,
+      "timestamp_fin": 0.16896551724137931
+    },
+    {
+      "orden": 49,
+      "letra": "d",
+      "timestamp_inicio": 0.16896551724137931,
+      "timestamp_fin": 0.1724137931034483
+    },
+    {
+      "orden": 50,
+      "letra": "o",
+      "timestamp_inicio": 0.1724137931034483,
+      "timestamp_fin": 0.17586206896551723
+    },
+    {
+      "orden": 51,
+      "letra": " ",
+      "timestamp_inicio": 0.17586206896551723,
+      "timestamp_fin": 0.1793103448275862
+    },
+    {
+      "orden": 52,
+      "letra": "a",
+      "timestamp_inicio": 0.1793103448275862,
+      "timestamp_fin": 0.18275862068965518
+    },
+    {
+      "orden": 53,
+      "letra": " ",
+      "timestamp_inicio": 0.18275862068965518,
+      "timestamp_fin": 0.18620689655172412
+    },
+    {
+      "orden": 54,
+      "letra": "s",
+      "timestamp_inicio": 0.18620689655172412,
+      "timestamp_fin": 0.1896551724137931
+    },
+    {
+      "orden": 55,
+      "letra": "u",
+      "timestamp_inicio": 0.1896551724137931,
+      "timestamp_fin": 0.19310344827586207
+    },
+    {
+      "orden": 56,
+      "letra": " ",
+      "timestamp_inicio": 0.19310344827586207,
+      "timestamp_fin": 0.19655172413793104
+    },
+    {
+      "orden": 57,
+      "letra": "H",
+      "timestamp_inicio": 0.19655172413793104,
+      "timestamp_fin": 0.2
+    },
+    {
+      "orden": 58,
+      "letra": "i",
+      "timestamp_inicio": 0.2,
+      "timestamp_fin": 0.20344827586206896
+    },
+    {
+      "orden": 59,
+      "letra": "j",
+      "timestamp_inicio": 0.20344827586206896,
+      "timestamp_fin": 0.20689655172413793
+    },
+    {
+      "orden": 60,
+      "letra": "o",
+      "timestamp_inicio": 0.20689655172413793,
+      "timestamp_fin": 0.2103448275862069
+    },
+    {
+      "orden": 61,
+      "letra": " ",
+      "timestamp_inicio": 0.2103448275862069,
+      "timestamp_fin": 0.21379310344827585
+    },
+    {
+      "orden": 62,
+      "letra": "u",
+      "timestamp_inicio": 0.21379310344827585,
+      "timestamp_fin": 0.21724137931034482
+    },
+    {
+      "orden": 63,
+      "letra": "n",
+      "timestamp_inicio": 0.21724137931034482,
+      "timestamp_fin": 0.2206896551724138
+    },
+    {
+      "orden": 64,
+      "letra": "i",
+      "timestamp_inicio": 0.2206896551724138,
+      "timestamp_fin": 0.22413793103448276
+    },
+    {
+      "orden": 65,
+      "letra": "g",
+      "timestamp_inicio": 0.22413793103448276,
+      "timestamp_fin": 0.22758620689655173
+    },
+    {
+      "orden": 66,
+      "letra": "e",
+      "timestamp_inicio": 0.22758620689655173,
+      "timestamp_fin": 0.23103448275862068
+    },
+    {
+      "orden": 67,
+      "letra": "n",
+      "timestamp_inicio": 0.23103448275862068,
+      "timestamp_fin": 0.23448275862068965
+    },
+    {
+      "orden": 68,
+      "letra": "i",
+      "timestamp_inicio": 0.23448275862068965,
+      "timestamp_fin": 0.23793103448275862
+    },
+    {
+      "orden": 69,
+      "letra": "t",
+      "timestamp_inicio": 0.23793103448275862,
+      "timestamp_fin": 0.24137931034482757
+    },
+    {
+      "orden": 70,
+      "letra": "o",
+      "timestamp_inicio": 0.24137931034482757,
+      "timestamp_fin": 0.24482758620689654
+    },
+    {
+      "orden": 71,
+      "letra": ",",
+      "timestamp_inicio": 0.24482758620689654,
+      "timestamp_fin": 0.2482758620689655
+    },
+    {
+      "orden": 72,
+      "letra": " ",
+      "timestamp_inicio": 0.2482758620689655,
+      "timestamp_fin": 0.2517241379310345
+    },
+    {
+      "orden": 73,
+      "letra": "p",
+      "timestamp_inicio": 0.2517241379310345,
+      "timestamp_fin": 0.25517241379310346
+    },
+    {
+      "orden": 74,
+      "letra": "a",
+      "timestamp_inicio": 0.25517241379310346,
+      "timestamp_fin": 0.25862068965517243
+    },
+    {
+      "orden": 75,
+      "letra": "r",
+      "timestamp_inicio": 0.25862068965517243,
+      "timestamp_fin": 0.26206896551724135
+    },
+    {
+      "orden": 76,
+      "letra": "a",
+      "timestamp_inicio": 0.26206896551724135,
+      "timestamp_fin": 0.2655172413793103
+    },
+    {
+      "orden": 77,
+      "letra": " ",
+      "timestamp_inicio": 0.2655172413793103,
+      "timestamp_fin": 0.2689655172413793
+    },
+    {
+      "orden": 78,
+      "letra": "q",
+      "timestamp_inicio": 0.2689655172413793,
+      "timestamp_fin": 0.27241379310344827
+    },
+    {
+      "orden": 79,
+      "letra": "u",
+      "timestamp_inicio": 0.27241379310344827,
+      "timestamp_fin": 0.27586206896551724
+    },
+    {
+      "orden": 80,
+      "letra": "e",
+      "timestamp_inicio": 0.27586206896551724,
+      "timestamp_fin": 0.2793103448275862
+    },
+    {
+      "orden": 81,
+      "letra": " ",
+      "timestamp_inicio": 0.2793103448275862,
+      "timestamp_fin": 0.2827586206896552
+    },
+    {
+      "orden": 82,
+      "letra": "t",
+      "timestamp_inicio": 0.2827586206896552,
+      "timestamp_fin": 0.28620689655172415
+    },
+    {
+      "orden": 83,
+      "letra": "o",
+      "timestamp_inicio": 0.28620689655172415,
+      "timestamp_fin": 0.2896551724137931
+    },
+    {
+      "orden": 84,
+      "letra": "d",
+      "timestamp_inicio": 0.2896551724137931,
+      "timestamp_fin": 0.29310344827586204
+    },
+    {
+      "orden": 85,
+      "letra": "o",
+      "timestamp_inicio": 0.29310344827586204,
+      "timestamp_fin": 0.296551724137931
+    },
+    {
+      "orden": 86,
+      "letra": " ",
+      "timestamp_inicio": 0.296551724137931,
+      "timestamp_fin": 0.3
+    },
+    {
+      "orden": 87,
+      "letra": "a",
+      "timestamp_inicio": 0.3,
+      "timestamp_fin": 0.30344827586206896
+    },
+    {
+      "orden": 88,
+      "letra": "q",
+      "timestamp_inicio": 0.30344827586206896,
+      "timestamp_fin": 0.30689655172413793
+    },
+    {
+      "orden": 89,
+      "letra": "u",
+      "timestamp_inicio": 0.30689655172413793,
+      "timestamp_fin": 0.3103448275862069
+    },
+    {
+      "orden": 90,
+      "letra": "e",
+      "timestamp_inicio": 0.3103448275862069,
+      "timestamp_fin": 0.3137931034482759
+    },
+    {
+      "orden": 91,
+      "letra": "l",
+      "timestamp_inicio": 0.3137931034482759,
+      "timestamp_fin": 0.3172413793103448
+    },
+    {
+      "orden": 92,
+      "letra": " ",
+      "timestamp_inicio": 0.3172413793103448,
+      "timestamp_fin": 0.32068965517241377
+    },
+    {
+      "orden": 93,
+      "letra": "q",
+      "timestamp_inicio": 0.32068965517241377,
+      "timestamp_fin": 0.32413793103448274
+    },
+    {
+      "orden": 94,
+      "letra": "u",
+      "timestamp_inicio": 0.32413793103448274,
+      "timestamp_fin": 0.3275862068965517
+    },
+    {
+      "orden": 95,
+      "letra": "e",
+      "timestamp_inicio": 0.3275862068965517,
+      "timestamp_fin": 0.3310344827586207
+    },
+    {
+      "orden": 96,
+      "letra": " ",
+      "timestamp_inicio": 0.3310344827586207,
+      "timestamp_fin": 0.33448275862068966
+    },
+    {
+      "orden": 97,
+      "letra": "e",
+      "timestamp_inicio": 0.33448275862068966,
+      "timestamp_fin": 0.33793103448275863
+    },
+    {
+      "orden": 98,
+      "letra": "n",
+      "timestamp_inicio": 0.33793103448275863,
+      "timestamp_fin": 0.3413793103448276
+    },
+    {
+      "orden": 99,
+      "letra": " ",
+      "timestamp_inicio": 0.3413793103448276,
+      "timestamp_fin": 0.3448275862068966
+    },
+    {
+      "orden": 100,
+      "letra": "e",
+      "timestamp_inicio": 0.3448275862068966,
+      "timestamp_fin": 0.3482758620689655
+    },
+    {
+      "orden": 101,
+      "letra": "l",
+      "timestamp_inicio": 0.3482758620689655,
+      "timestamp_fin": 0.35172413793103446
+    },
+    {
+      "orden": 102,
+      "letra": " ",
+      "timestamp_inicio": 0.35172413793103446,
+      "timestamp_fin": 0.35517241379310344
+    },
+    {
+      "orden": 103,
+      "letra": "c",
+      "timestamp_inicio": 0.35517241379310344,
+      "timestamp_fin": 0.3586206896551724
+    },
+    {
+      "orden": 104,
+      "letra": "r",
+      "timestamp_inicio": 0.3586206896551724,
+      "timestamp_fin": 0.3620689655172414
+    },
+    {
+      "orden": 105,
+      "letra": "e",
+      "timestamp_inicio": 0.3620689655172414,
+      "timestamp_fin": 0.36551724137931035
+    },
+    {
+      "orden": 106,
+      "letra": "e",
+      "timestamp_inicio": 0.36551724137931035,
+      "timestamp_fin": 0.3689655172413793
+    },
+    {
+      "orden": 107,
+      "letra": ",",
+      "timestamp_inicio": 0.3689655172413793,
+      "timestamp_fin": 0.37241379310344824
+    },
+    {
+      "orden": 108,
+      "letra": " ",
+      "timestamp_inicio": 0.37241379310344824,
+      "timestamp_fin": 0.3758620689655172
+    },
+    {
+      "orden": 109,
+      "letra": "n",
+      "timestamp_inicio": 0.3758620689655172,
+      "timestamp_fin": 0.3793103448275862
+    },
+    {
+      "orden": 110,
+      "letra": "o",
+      "timestamp_inicio": 0.3793103448275862,
+      "timestamp_fin": 0.38275862068965516
+    },
+    {
+      "orden": 111,
+      "letra": " ",
+      "timestamp_inicio": 0.38275862068965516,
+      "timestamp_fin": 0.38620689655172413
+    },
+    {
+      "orden": 112,
+      "letra": "s",
+      "timestamp_inicio": 0.38620689655172413,
+      "timestamp_fin": 0.3896551724137931
+    },
+    {
+      "orden": 113,
+      "letra": "e",
+      "timestamp_inicio": 0.3896551724137931,
+      "timestamp_fin": 0.3931034482758621
+    },
+    {
+      "orden": 114,
+      "letra": " ",
+      "timestamp_inicio": 0.3931034482758621,
+      "timestamp_fin": 0.39655172413793105
+    },
+    {
+      "orden": 115,
+      "letra": "p",
+      "timestamp_inicio": 0.39655172413793105,
+      "timestamp_fin": 0.4
+    },
+    {
+      "orden": 116,
+      "letra": "i",
+      "timestamp_inicio": 0.4,
+      "timestamp_fin": 0.40344827586206894
+    },
+    {
+      "orden": 117,
+      "letra": "e",
+      "timestamp_inicio": 0.40344827586206894,
+      "timestamp_fin": 0.4068965517241379
+    },
+    {
+      "orden": 118,
+      "letra": "r",
+      "timestamp_inicio": 0.4068965517241379,
+      "timestamp_fin": 0.4103448275862069
+    },
+    {
+      "orden": 119,
+      "letra": "d",
+      "timestamp_inicio": 0.4103448275862069,
+      "timestamp_fin": 0.41379310344827586
+    },
+    {
+      "orden": 120,
+      "letra": "a",
+      "timestamp_inicio": 0.41379310344827586,
+      "timestamp_fin": 0.41724137931034483
+    },
+    {
+      "orden": 121,
+      "letra": ",",
+      "timestamp_inicio": 0.41724137931034483,
+      "timestamp_fin": 0.4206896551724138
+    },
+    {
+      "orden": 122,
+      "letra": " ",
+      "timestamp_inicio": 0.4206896551724138,
+      "timestamp_fin": 0.4241379310344828
+    },
+    {
+      "orden": 123,
+      "letra": "m",
+      "timestamp_inicio": 0.4241379310344828,
+      "timestamp_fin": 0.4275862068965517
+    },
+    {
+      "orden": 124,
+      "letra": "a",
+      "timestamp_inicio": 0.4275862068965517,
+      "timestamp_fin": 0.43103448275862066
+    },
+    {
+      "orden": 125,
+      "letra": "s",
+      "timestamp_inicio": 0.43103448275862066,
+      "timestamp_fin": 0.43448275862068964
+    },
+    {
+      "orden": 126,
+      "letra": " ",
+      "timestamp_inicio": 0.43448275862068964,
+      "timestamp_fin": 0.4379310344827586
+    },
+    {
+      "orden": 127,
+      "letra": "t",
+      "timestamp_inicio": 0.4379310344827586,
+      "timestamp_fin": 0.4413793103448276
+    },
+    {
+      "orden": 128,
+      "letra": "e",
+      "timestamp_inicio": 0.4413793103448276,
+      "timestamp_fin": 0.44482758620689655
+    },
+    {
+      "orden": 129,
+      "letra": "n",
+      "timestamp_inicio": 0.44482758620689655,
+      "timestamp_fin": 0.4482758620689655
+    },
+    {
+      "orden": 130,
+      "letra": "g",
+      "timestamp_inicio": 0.4482758620689655,
+      "timestamp_fin": 0.4517241379310345
+    },
+    {
+      "orden": 131,
+      "letra": "a",
+      "timestamp_inicio": 0.4517241379310345,
+      "timestamp_fin": 0.45517241379310347
+    },
+    {
+      "orden": 132,
+      "letra": " ",
+      "timestamp_inicio": 0.45517241379310347,
+      "timestamp_fin": 0.4586206896551724
+    },
+    {
+      "orden": 133,
+      "letra": "v",
+      "timestamp_inicio": 0.4586206896551724,
+      "timestamp_fin": 0.46206896551724136
+    },
+    {
+      "orden": 134,
+      "letra": "i",
+      "timestamp_inicio": 0.46206896551724136,
+      "timestamp_fin": 0.46551724137931033
+    },
+    {
+      "orden": 135,
+      "letra": "d",
+      "timestamp_inicio": 0.46551724137931033,
+      "timestamp_fin": 0.4689655172413793
+    },
+    {
+      "orden": 136,
+      "letra": "a",
+      "timestamp_inicio": 0.4689655172413793,
+      "timestamp_fin": 0.4724137931034483
+    },
+    {
+      "orden": 137,
+      "letra": " ",
+      "timestamp_inicio": 0.4724137931034483,
+      "timestamp_fin": 0.47586206896551725
+    },
+    {
+      "orden": 138,
+      "letra": "e",
+      "timestamp_inicio": 0.47586206896551725,
+      "timestamp_fin": 0.4793103448275862
+    },
+    {
+      "orden": 139,
+      "letra": "t",
+      "timestamp_inicio": 0.4793103448275862,
+      "timestamp_fin": 0.48275862068965514
+    },
+    {
+      "orden": 140,
+      "letra": "e",
+      "timestamp_inicio": 0.48275862068965514,
+      "timestamp_fin": 0.4862068965517241
+    },
+    {
+      "orden": 141,
+      "letra": "r",
+      "timestamp_inicio": 0.4862068965517241,
+      "timestamp_fin": 0.4896551724137931
+    },
+    {
+      "orden": 142,
+      "letra": "n",
+      "timestamp_inicio": 0.4896551724137931,
+      "timestamp_fin": 0.49310344827586206
+    },
+    {
+      "orden": 143,
+      "letra": "a",
+      "timestamp_inicio": 0.49310344827586206,
+      "timestamp_fin": 0.496551724137931
+    },
+    {
+      "orden": 144,
+      "letra": ".",
+      "timestamp_inicio": 0.496551724137931,
+      "timestamp_fin": 0.5
+    }
+  ],
+  "palabras": [
+    {
+      "orden": 0,
+      "palabra": "Porque",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.016666666666666666
+    },
+    {
+      "orden": 1,
+      "palabra": "de",
+      "timestamp_inicio": 0.016666666666666666,
+      "timestamp_fin": 0.03333333333333333
+    },
+    {
+      "orden": 2,
+      "palabra": "tal",
+      "timestamp_inicio": 0.03333333333333333,
+      "timestamp_fin": 0.05
+    },
+    {
+      "orden": 3,
+      "palabra": "manera",
+      "timestamp_inicio": 0.05,
+      "timestamp_fin": 0.06666666666666667
+    },
+    {
+      "orden": 4,
+      "palabra": "amo",
+      "timestamp_inicio": 0.06666666666666667,
+      "timestamp_fin": 0.08333333333333333
+    },
+    {
+      "orden": 5,
+      "palabra": "Dios",
+      "timestamp_inicio": 0.08333333333333333,
+      "timestamp_fin": 0.1
+    },
+    {
+      "orden": 6,
+      "palabra": "al",
+      "timestamp_inicio": 0.1,
+      "timestamp_fin": 0.11666666666666667
+    },
+    {
+      "orden": 7,
+      "palabra": "mundo,",
+      "timestamp_inicio": 0.11666666666666667,
+      "timestamp_fin": 0.13333333333333333
+    },
+    {
+      "orden": 8,
+      "palabra": "que",
+      "timestamp_inicio": 0.13333333333333333,
+      "timestamp_fin": 0.15
+    },
+    {
+      "orden": 9,
+      "palabra": "ha",
+      "timestamp_inicio": 0.15,
+      "timestamp_fin": 0.16666666666666666
+    },
+    {
+      "orden": 10,
+      "palabra": "dado",
+      "timestamp_inicio": 0.16666666666666666,
+      "timestamp_fin": 0.18333333333333332
+    },
+    {
+      "orden": 11,
+      "palabra": "a",
+      "timestamp_inicio": 0.18333333333333332,
+      "timestamp_fin": 0.2
+    },
+    {
+      "orden": 12,
+      "palabra": "su",
+      "timestamp_inicio": 0.2,
+      "timestamp_fin": 0.21666666666666667
+    },
+    {
+      "orden": 13,
+      "palabra": "Hijo",
+      "timestamp_inicio": 0.21666666666666667,
+      "timestamp_fin": 0.23333333333333334
+    },
+    {
+      "orden": 14,
+      "palabra": "unigenito,",
+      "timestamp_inicio": 0.23333333333333334,
+      "timestamp_fin": 0.25
+    },
+    {
+      "orden": 15,
+      "palabra": "para",
+      "timestamp_inicio": 0.25,
+      "timestamp_fin": 0.26666666666666666
+    },
+    {
+      "orden": 16,
+      "palabra": "que",
+      "timestamp_inicio": 0.26666666666666666,
+      "timestamp_fin": 0.2833333333333333
+    },
+    {
+      "orden": 17,
+      "palabra": "todo",
+      "timestamp_inicio": 0.2833333333333333,
+      "timestamp_fin": 0.3
+    },
+    {
+      "orden": 18,
+      "palabra": "aquel",
+      "timestamp_inicio": 0.3,
+      "timestamp_fin": 0.31666666666666665
+    },
+    {
+      "orden": 19,
+      "palabra": "que",
+      "timestamp_inicio": 0.31666666666666665,
+      "timestamp_fin": 0.3333333333333333
+    },
+    {
+      "orden": 20,
+      "palabra": "en",
+      "timestamp_inicio": 0.3333333333333333,
+      "timestamp_fin": 0.35
+    },
+    {
+      "orden": 21,
+      "palabra": "el",
+      "timestamp_inicio": 0.35,
+      "timestamp_fin": 0.36666666666666664
+    },
+    {
+      "orden": 22,
+      "palabra": "cree,",
+      "timestamp_inicio": 0.36666666666666664,
+      "timestamp_fin": 0.3833333333333333
+    },
+    {
+      "orden": 23,
+      "palabra": "no",
+      "timestamp_inicio": 0.3833333333333333,
+      "timestamp_fin": 0.4
+    },
+    {
+      "orden": 24,
+      "palabra": "se",
+      "timestamp_inicio": 0.4,
+      "timestamp_fin": 0.4166666666666667
+    },
+    {
+      "orden": 25,
+      "palabra": "pierda,",
+      "timestamp_inicio": 0.4166666666666667,
+      "timestamp_fin": 0.43333333333333335
+    },
+    {
+      "orden": 26,
+      "palabra": "mas",
+      "timestamp_inicio": 0.43333333333333335,
+      "timestamp_fin": 0.45
+    },
+    {
+      "orden": 27,
+      "palabra": "tenga",
+      "timestamp_inicio": 0.45,
+      "timestamp_fin": 0.4666666666666667
+    },
+    {
+      "orden": 28,
+      "palabra": "vida",
+      "timestamp_inicio": 0.4666666666666667,
+      "timestamp_fin": 0.48333333333333334
+    },
+    {
+      "orden": 29,
+      "palabra": "eterna.",
+      "timestamp_inicio": 0.48333333333333334,
+      "timestamp_fin": 0.5
+    }
+  ],
+  "method": "simple"
+}

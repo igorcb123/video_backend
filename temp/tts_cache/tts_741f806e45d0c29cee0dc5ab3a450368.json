@@ -1,0 +1,631 @@
+{
+  "letras": [
+    {
+      "orden": 0,
+      "letra": "S",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 0.3082621722846442
+    },
+    {
+      "orden": 1,
+      "letra": "o",
+      "timestamp_inicio": 0.3082621722846442,
+      "timestamp_fin": 0.6165243445692884
+    },
+    {
+      "orden": 2,
+      "letra": "b",
+      "timestamp_inicio": 0.6165243445692884,
+      "timestamp_fin": 0.9247865168539326
+    },
+    {
+      "orden": 3,
+      "letra": "r",
+      "timestamp_inicio": 0.9247865168539326,
+      "timestamp_fin": 1.2330486891385768
+    },
+    {
+      "orden": 4,
+      "letra": "e",
+      "timestamp_inicio": 1.2330486891385768,
+      "timestamp_fin": 1.541310861423221
+    },
+    {
+      "orden": 5,
+      "letra": " ",
+      "timestamp_inicio": 1.541310861423221,
+      "timestamp_fin": 1.8495730337078653
+    },
+    {
+      "orden": 6,
+      "letra": "t",
+      "timestamp_inicio": 1.8495730337078653,
+      "timestamp_fin": 2.157835205992509
+    },
+    {
+      "orden": 7,
+      "letra": "o",
+      "timestamp_inicio": 2.157835205992509,
+      "timestamp_fin": 2.4660973782771536
+    },
+    {
+      "orden": 8,
+      "letra": "d",
+      "timestamp_inicio": 2.4660973782771536,
+      "timestamp_fin": 2.774359550561798
+    },
+    {
+      "orden": 9,
+      "letra": "a",
+      "timestamp_inicio": 2.774359550561798,
+      "timestamp_fin": 3.082621722846442
+    },
+    {
+      "orden": 10,
+      "letra": " ",
+      "timestamp_inicio": 3.082621722846442,
+      "timestamp_fin": 3.3908838951310862
+    },
+    {
+      "orden": 11,
+      "letra": "c",
+      "timestamp_inicio": 3.3908838951310862,
+      "timestamp_fin": 3.6991460674157306
+    },
+    {
+      "orden": 12,
+      "letra": "o",
+      "timestamp_inicio": 3.6991460674157306,
+      "timestamp_fin": 4.007408239700375
+    },
+    {
+      "orden": 13,
+      "letra": "s",
+      "timestamp_inicio": 4.007408239700375,
+      "timestamp_fin": 4.315670411985018
+    },
+    {
+      "orden": 14,
+      "letra": "a",
+      "timestamp_inicio": 4.315670411985018,
+      "timestamp_fin": 4.623932584269663
+    },
+    {
+      "orden": 15,
+      "letra": " ",
+      "timestamp_inicio": 4.623932584269663,
+      "timestamp_fin": 4.932194756554307
+    },
+    {
+      "orden": 16,
+      "letra": "g",
+      "timestamp_inicio": 4.932194756554307,
+      "timestamp_fin": 5.2404569288389515
+    },
+    {
+      "orden": 17,
+      "letra": "u",
+      "timestamp_inicio": 5.2404569288389515,
+      "timestamp_fin": 5.548719101123596
+    },
+    {
+      "orden": 18,
+      "letra": "a",
+      "timestamp_inicio": 5.548719101123596,
+      "timestamp_fin": 5.856981273408239
+    },
+    {
+      "orden": 19,
+      "letra": "r",
+      "timestamp_inicio": 5.856981273408239,
+      "timestamp_fin": 6.165243445692884
+    },
+    {
+      "orden": 20,
+      "letra": "d",
+      "timestamp_inicio": 6.165243445692884,
+      "timestamp_fin": 6.473505617977528
+    },
+    {
+      "orden": 21,
+      "letra": "a",
+      "timestamp_inicio": 6.473505617977528,
+      "timestamp_fin": 6.7817677902621725
+    },
+    {
+      "orden": 22,
+      "letra": "d",
+      "timestamp_inicio": 6.7817677902621725,
+      "timestamp_fin": 7.090029962546817
+    },
+    {
+      "orden": 23,
+      "letra": "a",
+      "timestamp_inicio": 7.090029962546817,
+      "timestamp_fin": 7.398292134831461
+    },
+    {
+      "orden": 24,
+      "letra": ",",
+      "timestamp_inicio": 7.398292134831461,
+      "timestamp_fin": 7.706554307116105
+    },
+    {
+      "orden": 25,
+      "letra": " ",
+      "timestamp_inicio": 7.706554307116105,
+      "timestamp_fin": 8.01481647940075
+    },
+    {
+      "orden": 26,
+      "letra": "g",
+      "timestamp_inicio": 8.01481647940075,
+      "timestamp_fin": 8.323078651685393
+    },
+    {
+      "orden": 27,
+      "letra": "u",
+      "timestamp_inicio": 8.323078651685393,
+      "timestamp_fin": 8.631340823970037
+    },
+    {
+      "orden": 28,
+      "letra": "a",
+      "timestamp_inicio": 8.631340823970037,
+      "timestamp_fin": 8.939602996254681
+    },
+    {
+      "orden": 29,
+      "letra": "r",
+      "timestamp_inicio": 8.939602996254681,
+      "timestamp_fin": 9.247865168539326
+    },
+    {
+      "orden": 30,
+      "letra": "d",
+      "timestamp_inicio": 9.247865168539326,
+      "timestamp_fin": 9.55612734082397
+    },
+    {
+      "orden": 31,
+      "letra": "a",
+      "timestamp_inicio": 9.55612734082397,
+      "timestamp_fin": 9.864389513108614
+    },
+    {
+      "orden": 32,
+      "letra": " ",
+      "timestamp_inicio": 9.864389513108614,
+      "timestamp_fin": 10.172651685393259
+    },
+    {
+      "orden": 33,
+      "letra": "t",
+      "timestamp_inicio": 10.172651685393259,
+      "timestamp_fin": 10.480913857677903
+    },
+    {
+      "orden": 34,
+      "letra": "u",
+      "timestamp_inicio": 10.480913857677903,
+      "timestamp_fin": 10.789176029962547
+    },
+    {
+      "orden": 35,
+      "letra": " ",
+      "timestamp_inicio": 10.789176029962547,
+      "timestamp_fin": 11.097438202247192
+    },
+    {
+      "orden": 36,
+      "letra": "c",
+      "timestamp_inicio": 11.097438202247192,
+      "timestamp_fin": 11.405700374531836
+    },
+    {
+      "orden": 37,
+      "letra": "o",
+      "timestamp_inicio": 11.405700374531836,
+      "timestamp_fin": 11.713962546816479
+    },
+    {
+      "orden": 38,
+      "letra": "r",
+      "timestamp_inicio": 11.713962546816479,
+      "timestamp_fin": 12.022224719101123
+    },
+    {
+      "orden": 39,
+      "letra": "a",
+      "timestamp_inicio": 12.022224719101123,
+      "timestamp_fin": 12.330486891385767
+    },
+    {
+      "orden": 40,
+      "letra": "z",
+      "timestamp_inicio": 12.330486891385767,
+      "timestamp_fin": 12.638749063670412
+    },
+    {
+      "orden": 41,
+      "letra": "ó",
+      "timestamp_inicio": 12.638749063670412,
+      "timestamp_fin": 12.947011235955056
+    },
+    {
+      "orden": 42,
+      "letra": "n",
+      "timestamp_inicio": 12.947011235955056,
+      "timestamp_fin": 13.2552734082397
+    },
+    {
+      "orden": 43,
+      "letra": ";",
+      "timestamp_inicio": 13.2552734082397,
+      "timestamp_fin": 13.563535580524345
+    },
+    {
+      "orden": 44,
+      "letra": " ",
+      "timestamp_inicio": 13.563535580524345,
+      "timestamp_fin": 13.87179775280899
+    },
+    {
+      "orden": 45,
+      "letra": "p",
+      "timestamp_inicio": 13.87179775280899,
+      "timestamp_fin": 14.180059925093634
+    },
+    {
+      "orden": 46,
+      "letra": "o",
+      "timestamp_inicio": 14.180059925093634,
+      "timestamp_fin": 14.488322097378278
+    },
+    {
+      "orden": 47,
+      "letra": "r",
+      "timestamp_inicio": 14.488322097378278,
+      "timestamp_fin": 14.796584269662922
+    },
+    {
+      "orden": 48,
+      "letra": "q",
+      "timestamp_inicio": 14.796584269662922,
+      "timestamp_fin": 15.104846441947565
+    },
+    {
+      "orden": 49,
+      "letra": "u",
+      "timestamp_inicio": 15.104846441947565,
+      "timestamp_fin": 15.41310861423221
+    },
+    {
+      "orden": 50,
+      "letra": "e",
+      "timestamp_inicio": 15.41310861423221,
+      "timestamp_fin": 15.721370786516854
+    },
+    {
+      "orden": 51,
+      "letra": " ",
+      "timestamp_inicio": 15.721370786516854,
+      "timestamp_fin": 16.0296329588015
+    },
+    {
+      "orden": 52,
+      "letra": "d",
+      "timestamp_inicio": 16.0296329588015,
+      "timestamp_fin": 16.337895131086142
+    },
+    {
+      "orden": 53,
+      "letra": "e",
+      "timestamp_inicio": 16.337895131086142,
+      "timestamp_fin": 16.646157303370785
+    },
+    {
+      "orden": 54,
+      "letra": " ",
+      "timestamp_inicio": 16.646157303370785,
+      "timestamp_fin": 16.95441947565543
+    },
+    {
+      "orden": 55,
+      "letra": "é",
+      "timestamp_inicio": 16.95441947565543,
+      "timestamp_fin": 17.262681647940074
+    },
+    {
+      "orden": 56,
+      "letra": "l",
+      "timestamp_inicio": 17.262681647940074,
+      "timestamp_fin": 17.57094382022472
+    },
+    {
+      "orden": 57,
+      "letra": " ",
+      "timestamp_inicio": 17.57094382022472,
+      "timestamp_fin": 17.879205992509362
+    },
+    {
+      "orden": 58,
+      "letra": "m",
+      "timestamp_inicio": 17.879205992509362,
+      "timestamp_fin": 18.18746816479401
+    },
+    {
+      "orden": 59,
+      "letra": "a",
+      "timestamp_inicio": 18.18746816479401,
+      "timestamp_fin": 18.49573033707865
+    },
+    {
+      "orden": 60,
+      "letra": "n",
+      "timestamp_inicio": 18.49573033707865,
+      "timestamp_fin": 18.803992509363297
+    },
+    {
+      "orden": 61,
+      "letra": "a",
+      "timestamp_inicio": 18.803992509363297,
+      "timestamp_fin": 19.11225468164794
+    },
+    {
+      "orden": 62,
+      "letra": " ",
+      "timestamp_inicio": 19.11225468164794,
+      "timestamp_fin": 19.420516853932586
+    },
+    {
+      "orden": 63,
+      "letra": "l",
+      "timestamp_inicio": 19.420516853932586,
+      "timestamp_fin": 19.72877902621723
+    },
+    {
+      "orden": 64,
+      "letra": "a",
+      "timestamp_inicio": 19.72877902621723,
+      "timestamp_fin": 20.03704119850187
+    },
+    {
+      "orden": 65,
+      "letra": " ",
+      "timestamp_inicio": 20.03704119850187,
+      "timestamp_fin": 20.345303370786517
+    },
+    {
+      "orden": 66,
+      "letra": "v",
+      "timestamp_inicio": 20.345303370786517,
+      "timestamp_fin": 20.65356554307116
+    },
+    {
+      "orden": 67,
+      "letra": "i",
+      "timestamp_inicio": 20.65356554307116,
+      "timestamp_fin": 20.961827715355806
+    },
+    {
+      "orden": 68,
+      "letra": "d",
+      "timestamp_inicio": 20.961827715355806,
+      "timestamp_fin": 21.27008988764045
+    },
+    {
+      "orden": 69,
+      "letra": "a",
+      "timestamp_inicio": 21.27008988764045,
+      "timestamp_fin": 21.578352059925095
+    },
+    {
+      "orden": 70,
+      "letra": ".",
+      "timestamp_inicio": 21.578352059925095,
+      "timestamp_fin": 21.886614232209737
+    },
+    {
+      "orden": 71,
+      "letra": " ",
+      "timestamp_inicio": 21.886614232209737,
+      "timestamp_fin": 22.194876404494384
+    },
+    {
+      "orden": 72,
+      "letra": "(",
+      "timestamp_inicio": 22.194876404494384,
+      "timestamp_fin": 22.503138576779026
+    },
+    {
+      "orden": 73,
+      "letra": "P",
+      "timestamp_inicio": 22.503138576779026,
+      "timestamp_fin": 22.811400749063672
+    },
+    {
+      "orden": 74,
+      "letra": "r",
+      "timestamp_inicio": 22.811400749063672,
+      "timestamp_fin": 23.119662921348315
+    },
+    {
+      "orden": 75,
+      "letra": "o",
+      "timestamp_inicio": 23.119662921348315,
+      "timestamp_fin": 23.427925093632957
+    },
+    {
+      "orden": 76,
+      "letra": "v",
+      "timestamp_inicio": 23.427925093632957,
+      "timestamp_fin": 23.736187265917604
+    },
+    {
+      "orden": 77,
+      "letra": "e",
+      "timestamp_inicio": 23.736187265917604,
+      "timestamp_fin": 24.044449438202246
+    },
+    {
+      "orden": 78,
+      "letra": "r",
+      "timestamp_inicio": 24.044449438202246,
+      "timestamp_fin": 24.352711610486892
+    },
+    {
+      "orden": 79,
+      "letra": "b",
+      "timestamp_inicio": 24.352711610486892,
+      "timestamp_fin": 24.660973782771535
+    },
+    {
+      "orden": 80,
+      "letra": "i",
+      "timestamp_inicio": 24.660973782771535,
+      "timestamp_fin": 24.96923595505618
+    },
+    {
+      "orden": 81,
+      "letra": "o",
+      "timestamp_inicio": 24.96923595505618,
+      "timestamp_fin": 25.277498127340824
+    },
+    {
+      "orden": 82,
+      "letra": "s",
+      "timestamp_inicio": 25.277498127340824,
+      "timestamp_fin": 25.58576029962547
+    },
+    {
+      "orden": 83,
+      "letra": " ",
+      "timestamp_inicio": 25.58576029962547,
+      "timestamp_fin": 25.894022471910112
+    },
+    {
+      "orden": 84,
+      "letra": "4",
+      "timestamp_inicio": 25.894022471910112,
+      "timestamp_fin": 26.20228464419476
+    },
+    {
+      "orden": 85,
+      "letra": ":",
+      "timestamp_inicio": 26.20228464419476,
+      "timestamp_fin": 26.5105468164794
+    },
+    {
+      "orden": 86,
+      "letra": "2",
+      "timestamp_inicio": 26.5105468164794,
+      "timestamp_fin": 26.818808988764044
+    },
+    {
+      "orden": 87,
+      "letra": "3",
+      "timestamp_inicio": 26.818808988764044,
+      "timestamp_fin": 27.12707116104869
+    },
+    {
+      "orden": 88,
+      "letra": ")",
+      "timestamp_inicio": 27.12707116104869,
+      "timestamp_fin": 27.435333333333332
+    }
+  ],
+  "palabras": [
+    {
+      "orden": 0,
+      "palabra": "Sobre",
+      "timestamp_inicio": 0.0,
+      "timestamp_fin": 1.829022222222222
+    },
+    {
+      "orden": 1,
+      "palabra": "toda",
+      "timestamp_inicio": 1.829022222222222,
+      "timestamp_fin": 3.658044444444444
+    },
+    {
+      "orden": 2,
+      "palabra": "cosa",
+      "timestamp_inicio": 3.658044444444444,
+      "timestamp_fin": 5.487066666666666
+    },
+    {
+      "orden": 3,
+      "palabra": "guardada,",
+      "timestamp_inicio": 5.487066666666666,
+      "timestamp_fin": 7.316088888888888
+    },
+    {
+      "orden": 4,
+      "palabra": "guarda",
+      "timestamp_inicio": 7.316088888888888,
+      "timestamp_fin": 9.14511111111111
+    },
+    {
+      "orden": 5,
+      "palabra": "tu",
+      "timestamp_inicio": 9.14511111111111,
+      "timestamp_fin": 10.974133333333333
+    },
+    {
+      "orden": 6,
+      "palabra": "corazón;",
+      "timestamp_inicio": 10.974133333333333,
+      "timestamp_fin": 12.803155555555556
+    },
+    {
+      "orden": 7,
+      "palabra": "porque",
+      "timestamp_inicio": 12.803155555555556,
+      "timestamp_fin": 14.632177777777777
+    },
+    {
+      "orden": 8,
+      "palabra": "de",
+      "timestamp_inicio": 14.632177777777777,
+      "timestamp_fin": 16.461199999999998
+    },
+    {
+      "orden": 9,
+      "palabra": "él",
+      "timestamp_inicio": 16.461199999999998,
+      "timestamp_fin": 18.29022222222222
+    },
+    {
+      "orden": 10,
+      "palabra": "mana",
+      "timestamp_inicio": 18.29022222222222,
+      "timestamp_fin": 20.119244444444444
+    },
+    {
+      "orden": 11,
+      "palabra": "la",
+      "timestamp_inicio": 20.119244444444444,
+      "timestamp_fin": 21.948266666666665
+    },
+    {
+      "orden": 12,
+      "palabra": "vida.",
+      "timestamp_inicio": 21.948266666666665,
+      "timestamp_fin": 23.777288888888886
+    },
+    {
+      "orden": 13,
+      "palabra": "(Proverbios",
+      "timestamp_inicio": 23.777288888888886,
+      "timestamp_fin": 25.60631111111111
+    },
+    {
+      "orden": 14,
+      "palabra": "4:23)",
+      "timestamp_inicio": 25.60631111111111,
+      "timestamp_fin": 27.435333333333332
+    }
+  ],
+  "method": "simple"
+}
