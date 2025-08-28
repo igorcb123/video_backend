@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343538.7594962,
+  "query": "elderly woman wearing blue cardigan knitting wool scarf by window",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "1534832",
+        "url": "https://www.pexels.com/photo/woman-wearing-white-hat-sitting-on-ledge-1534832/",
+        "download_url": "https://images.pexels.com/photos/1534832/pexels-photo-1534832.jpeg",
+        "title": "Photo by Craig Adderley",
+        "description": "Stylish elderly woman in winter clothing sitting on urban street ledge.",
+        "tags": [
+          "elderly woman wearing blue cardigan knitting wool scarf by window"
+        ],
+        "width": 4088,
+        "height": 3648,
+        "file_size": null,
+        "photographer": "Craig Adderley",
+        "photographer_url": "https://www.pexels.com/@thatguycraig000",
+        "provider": "Pexels"
+      },
+      {
+        "id": "7585237",
+        "url": "https://www.pexels.com/photo/dreamy-young-ethnic-woman-creating-knitwear-at-home-7585237/",
+        "download_url": "https://images.pexels.com/photos/7585237/pexels-photo-7585237.jpeg",
+        "title": "Photo by Miriam Alonso",
+        "description": "Young woman with curly hair knitting peacefully by a window indoors.",
+        "tags": [
+          "elderly woman wearing blue cardigan knitting wool scarf by window"
+        ],
+        "width": 3567,
+        "height": 5350,
+        "file_size": null,
+        "photographer": "Miriam Alonso",
+        "photographer_url": "https://www.pexels.com/@miriam-alonso",
+        "provider": "Pexels"
+      },
+      {
+        "id": "8847327",
+        "url": "https://www.pexels.com/photo/elderly-woman-sitting-and-sewing-8847327/",
+        "download_url": "https://images.pexels.com/photos/8847327/pexels-photo-8847327.jpeg",
+        "title": "Photo by cottonbro studio",
+        "description": "Elderly woman knitting with yarn in an armchair, creating a peaceful and cozy atmosphere.",
+        "tags": [
+          "elderly woman wearing blue cardigan knitting wool scarf by window"
+        ],
+        "width": 4000,
+        "height": 6000,
+        "file_size": null,
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

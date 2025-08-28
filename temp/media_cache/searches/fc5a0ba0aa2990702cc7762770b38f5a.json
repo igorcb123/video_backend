@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343405.1203058,
+  "query": "flowing liquid metal texture",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "11370711",
+        "url": "https://www.pexels.com/photo/water-flowing-from-gray-steel-pipe-11370711/",
+        "download_url": "https://images.pexels.com/photos/11370711/pexels-photo-11370711.jpeg",
+        "title": "Photo by Darya Grey_Owl",
+        "description": "Flowing water from metal pipe showcasing motion and fluidity in an industrial setting.",
+        "tags": [
+          "flowing liquid metal texture"
+        ],
+        "width": 3072,
+        "height": 4608,
+        "file_size": null,
+        "photographer": "Darya Grey_Owl",
+        "photographer_url": "https://www.pexels.com/@darya-grey_owl-132130036",
+        "provider": "Pexels"
+      },
+      {
+        "id": "13638104",
+        "url": "https://www.pexels.com/photo/water-flowing-from-faucet-13638104/",
+        "download_url": "https://images.pexels.com/photos/13638104/pexels-photo-13638104.jpeg",
+        "title": "Photo by Rahmi Aksöz",
+        "description": "Detailed close-up of a vintage brass faucet with water flowing, showcasing intricate design.",
+        "tags": [
+          "flowing liquid metal texture"
+        ],
+        "width": 2848,
+        "height": 4288,
+        "file_size": null,
+        "photographer": "Rahmi Aksöz",
+        "photographer_url": "https://www.pexels.com/@rahmi-aksoz-53797721",
+        "provider": "Pexels"
+      },
+      {
+        "id": "19526670",
+        "url": "https://www.pexels.com/photo/liquid-dripping-from-container-19526670/",
+        "download_url": "https://images.pexels.com/photos/19526670/pexels-photo-19526670.jpeg",
+        "title": "Photo by Katia Miasoed",
+        "description": "Close-up image capturing liquid being poured from a pan into a jug revealing dynamic movement.",
+        "tags": [
+          "flowing liquid metal texture"
+        ],
+        "width": 4672,
+        "height": 7008,
+        "file_size": null,
+        "photographer": "Katia Miasoed",
+        "photographer_url": "https://www.pexels.com/@katia-miasoed-624959709",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

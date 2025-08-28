@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343313.8212843,
+  "query": "happy family having dinner",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "5638644",
+        "url": "https://www.pexels.com/photo/happy-family-enjoying-dinner-in-garden-5638644/",
+        "download_url": "https://images.pexels.com/photos/5638644/pexels-photo-5638644.jpeg",
+        "title": "Photo by Askar Abayev",
+        "description": "Smiling elderly woman with family and friends enjoying dinner at table backyard garden",
+        "tags": [
+          "happy family having dinner"
+        ],
+        "width": 8171,
+        "height": 5447,
+        "file_size": null,
+        "photographer": "Askar Abayev",
+        "photographer_url": "https://www.pexels.com/@askar-abayev",
+        "provider": "Pexels"
+      },
+      {
+        "id": "5638673",
+        "url": "https://www.pexels.com/photo/cheerful-man-having-dinner-party-with-family-5638673/",
+        "download_url": "https://images.pexels.com/photos/5638673/pexels-photo-5638673.jpeg",
+        "title": "Photo by Askar Abayev",
+        "description": "Joyful outdoor dinner gathering with friends and family enjoying meals and beverages.",
+        "tags": [
+          "happy family having dinner"
+        ],
+        "width": 5000,
+        "height": 3333,
+        "file_size": null,
+        "photographer": "Askar Abayev",
+        "photographer_url": "https://www.pexels.com/@askar-abayev",
+        "provider": "Pexels"
+      },
+      {
+        "id": "3940486",
+        "url": "https://www.pexels.com/photo/group-of-women-having-dinner-3940486/",
+        "download_url": "https://images.pexels.com/photos/3940486/pexels-photo-3940486.jpeg",
+        "title": "Photo by Andrea Piacquadio",
+        "description": "A group of women enjoying a lively dinner party with wine and candlelight, showcasing friendship and happiness.",
+        "tags": [
+          "happy family having dinner"
+        ],
+        "width": 7680,
+        "height": 5120,
+        "file_size": null,
+        "photographer": "Andrea Piacquadio",
+        "photographer_url": "https://www.pexels.com/@olly",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

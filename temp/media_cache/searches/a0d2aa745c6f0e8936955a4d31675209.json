@@ -1,0 +1,53 @@
+{
+  "timestamp": 1756343223.713737,
+  "query": "happy family having dinner",
+  "page": 1,
+  "per_page": 2,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "2302846761344889416",
+        "url": "https://www.google.com/search?q=happy+family+having+dinner&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=mav55tlIg3E7dM&vssid=mosaic",
+        "download_url": "https://us.images.westend61.de/0001883912pw/happy-family-enjoying-dinner-at-home-on-christmas-EBSF03777.jpg",
+        "title": "Image 1 from search: happy family having dinner",
+        "description": "Image from Google Images search: happy family having dinner",
+        "tags": [
+          "happy",
+          "family",
+          "having",
+          "dinner"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "us.images.westend61.de",
+        "photographer_url": "https://us.images.westend61.de",
+        "provider": "google"
+      },
+      {
+        "id": "8916818544449054584",
+        "url": "https://www.google.com/search?q=happy+family+having+dinner&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=G8OjEgX9mOIkzM&vssid=mosaic",
+        "download_url": "https://assets.medpagetoday.net/media/images/103xxx/103838.jpg?width=0.8",
+        "title": "Image 2 from search: happy family having dinner",
+        "description": "Image from Google Images search: happy family having dinner",
+        "tags": [
+          "happy",
+          "family",
+          "having",
+          "dinner"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "assets.medpagetoday.net",
+        "photographer_url": "https://assets.medpagetoday.net",
+        "provider": "google"
+      }
+    ],
+    "total_results": 2,
+    "page": 1,
+    "per_page": 2,
+    "has_next": true
+  }
+}

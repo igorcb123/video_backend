@@ -1,0 +1,96 @@
+{
+  "timestamp": 1756343532.2672966,
+  "query": "red 2019 Tesla Model S parked in front of glass office building",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "7880584100834346594",
+        "url": "https://www.google.com/search?q=red+2019+Tesla+Model+S+parked+in+front+of+glass+office+building&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=I9djJCDkHzl-LM&vssid=mosaic",
+        "download_url": "https://i.redd.it/xktpwfdw6rk71.jpg",
+        "title": "Image 1 from search: red 2019 Tesla Model S parked in front of glass office building",
+        "description": "Image from Google Images search: red 2019 Tesla Model S parked in front of glass office building",
+        "tags": [
+          "red",
+          "2019",
+          "Tesla",
+          "Model",
+          "S",
+          "parked",
+          "in",
+          "front",
+          "of",
+          "glass",
+          "office",
+          "building"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "i.redd.it",
+        "photographer_url": "https://i.redd.it",
+        "provider": "google"
+      },
+      {
+        "id": "1968818074658864390",
+        "url": "https://www.google.com/search?q=red+2019+Tesla+Model+S+parked+in+front+of+glass+office+building&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=5F3Zj9CAN47b3M&vssid=mosaic",
+        "download_url": "https://m.wsj.net/video/20170504/050417teslamodel3a/050417teslamodel3a_1280x720.jpg",
+        "title": "Image 2 from search: red 2019 Tesla Model S parked in front of glass office building",
+        "description": "Image from Google Images search: red 2019 Tesla Model S parked in front of glass office building",
+        "tags": [
+          "red",
+          "2019",
+          "Tesla",
+          "Model",
+          "S",
+          "parked",
+          "in",
+          "front",
+          "of",
+          "glass",
+          "office",
+          "building"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "m.wsj.net",
+        "photographer_url": "https://m.wsj.net",
+        "provider": "google"
+      },
+      {
+        "id": "8033110804157356333",
+        "url": "https://www.google.com/search?q=red+2019+Tesla+Model+S+parked+in+front+of+glass+office+building&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=fFkH2sczHcqgeM&vssid=mosaic",
+        "download_url": "https://i.guim.co.uk/img/media/81aabc71cca47e498eb35750cfd57340540c7220/0_344_3766_2260/master/3766.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8acb94eb7c746f3dd67576c1f54e994a",
+        "title": "Image 3 from search: red 2019 Tesla Model S parked in front of glass office building",
+        "description": "Image from Google Images search: red 2019 Tesla Model S parked in front of glass office building",
+        "tags": [
+          "red",
+          "2019",
+          "Tesla",
+          "Model",
+          "S",
+          "parked",
+          "in",
+          "front",
+          "of",
+          "glass",
+          "office",
+          "building"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "i.guim.co.uk",
+        "photographer_url": "https://i.guim.co.uk",
+        "provider": "google"
+      }
+    ],
+    "total_results": 3,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343641.4737248,
+  "query": "solar system planets educational diagram with labels",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "7605840",
+        "url": "https://www.pexels.com/photo/handwritten-creative-earth-space-7605840/",
+        "download_url": "https://images.pexels.com/photos/7605840/pexels-photo-7605840.jpeg",
+        "title": "Photo by RDNE Stock project",
+        "description": "Colorful solar system poster in a classroom emphasizing planets and learning.",
+        "tags": [
+          "solar system planets educational diagram with labels"
+        ],
+        "width": 6720,
+        "height": 4480,
+        "file_size": null,
+        "photographer": "RDNE Stock project",
+        "photographer_url": "https://www.pexels.com/@rdne",
+        "provider": "Pexels"
+      },
+      {
+        "id": "7606220",
+        "url": "https://www.pexels.com/photo/a-boy-holding-a-school-project-7606220/",
+        "download_url": "https://images.pexels.com/photos/7606220/pexels-photo-7606220.jpeg",
+        "title": "Photo by RDNE Stock project",
+        "description": "Young boy proudly holds his creative solar system school project indoors.",
+        "tags": [
+          "solar system planets educational diagram with labels"
+        ],
+        "width": 4095,
+        "height": 6142,
+        "file_size": null,
+        "photographer": "RDNE Stock project",
+        "photographer_url": "https://www.pexels.com/@rdne",
+        "provider": "Pexels"
+      },
+      {
+        "id": "7663144",
+        "url": "https://www.pexels.com/photo/space-diagram-on-blue-screen-7663144/",
+        "download_url": "https://images.pexels.com/photos/7663144/pexels-photo-7663144.jpeg",
+        "title": "Photo by Mikhail Nilov",
+        "description": "Detailed celestial constellation map with star connections on a vibrant blue background, ideal for astronomy enthusiasts.",
+        "tags": [
+          "solar system planets educational diagram with labels"
+        ],
+        "width": 4000,
+        "height": 6000,
+        "file_size": null,
+        "photographer": "Mikhail Nilov",
+        "photographer_url": "https://www.pexels.com/@mikhail-nilov",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "timestamp": 1756343579.9602802,
+  "query": "elderly woman wearing blue cardigan knitting wool scarf by window",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "7671556949451956211",
+        "url": "https://www.google.com/search?q=elderly+woman+wearing+blue+cardigan+knitting+wool+scarf+by+window&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=tSWtoixN8wjGwM&vssid=mosaic",
+        "download_url": "https://marlybird.com/wp-content/uploads/Amanda-Woods-Knit-Cocoon-Cardigan-25-768x1024.jpg",
+        "title": "Image 1 from search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "description": "Image from Google Images search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "tags": [
+          "elderly",
+          "woman",
+          "wearing",
+          "blue",
+          "cardigan",
+          "knitting",
+          "wool",
+          "scarf",
+          "by",
+          "window"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "marlybird.com",
+        "photographer_url": "https://marlybird.com",
+        "provider": "google"
+      },
+      {
+        "id": "4786330802411193807",
+        "url": "https://www.google.com/search?q=elderly+woman+wearing+blue+cardigan+knitting+wool+scarf+by+window&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=itCW6twiYL6hpM&vssid=mosaic",
+        "download_url": "https://i.pinimg.com/736x/7e/27/ac/7e27ac1b6c1fecd5abe2bf29cdf60dba.jpg",
+        "title": "Image 2 from search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "description": "Image from Google Images search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "tags": [
+          "elderly",
+          "woman",
+          "wearing",
+          "blue",
+          "cardigan",
+          "knitting",
+          "wool",
+          "scarf",
+          "by",
+          "window"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "i.pinimg.com",
+        "photographer_url": "https://i.pinimg.com",
+        "provider": "google"
+      },
+      {
+        "id": "2495989529774106789",
+        "url": "https://www.google.com/search?q=elderly+woman+wearing+blue+cardigan+knitting+wool+scarf+by+window&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=ZVDqr9C8BBxaXM&vssid=mosaic",
+        "download_url": "https://i.etsystatic.com/25073131/r/il/f29e69/3366099930/il_fullxfull.3366099930_ik0w.jpg",
+        "title": "Image 3 from search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "description": "Image from Google Images search: elderly woman wearing blue cardigan knitting wool scarf by window",
+        "tags": [
+          "elderly",
+          "woman",
+          "wearing",
+          "blue",
+          "cardigan",
+          "knitting",
+          "wool",
+          "scarf",
+          "by",
+          "window"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "i.etsystatic.com",
+        "photographer_url": "https://i.etsystatic.com",
+        "provider": "google"
+      }
+    ],
+    "total_results": 3,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "timestamp": 1756343359.3315277,
+  "query": "happy family having dinner",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "1910461732513274550",
+        "url": "https://www.google.com/search?q=happy+family+having+dinner&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=JMqg-2WS5Z4FPM&vssid=mosaic",
+        "download_url": "https://png.pngtree.com/png-clipart/20240514/original/pngtree-happy-diverse-family-eating-together-on-round-dinner-table-png-image_15096439.png",
+        "title": "Image 1 from search: happy family having dinner",
+        "description": "Image from Google Images search: happy family having dinner",
+        "tags": [
+          "happy",
+          "family",
+          "having",
+          "dinner"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "png.pngtree.com",
+        "photographer_url": "https://png.pngtree.com",
+        "provider": "google"
+      },
+      {
+        "id": "3663770207843165650",
+        "url": "https://www.google.com/search?q=happy+family+having+dinner&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=G8OjEgX9mOIkzM&vssid=mosaic",
+        "download_url": "https://assets.medpagetoday.net/media/images/103xxx/103838.jpg?width=0.8",
+        "title": "Image 2 from search: happy family having dinner",
+        "description": "Image from Google Images search: happy family having dinner",
+        "tags": [
+          "happy",
+          "family",
+          "having",
+          "dinner"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "assets.medpagetoday.net",
+        "photographer_url": "https://assets.medpagetoday.net",
+        "provider": "google"
+      },
+      {
+        "id": "1433094190151619490",
+        "url": "https://www.google.com/search?q=happy+family+having+dinner&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=Q5JEGf0k5mAdzM&vssid=mosaic",
+        "download_url": "https://wehavekids.com/.image/t_share/MTk5Mzg3MjcxMTg5NzY3NTgy/family-dinner-table-manners-for-children.png",
+        "title": "Image 3 from search: happy family having dinner",
+        "description": "Image from Google Images search: happy family having dinner",
+        "tags": [
+          "happy",
+          "family",
+          "having",
+          "dinner"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "wehavekids.com",
+        "photographer_url": "https://wehavekids.com",
+        "provider": "google"
+      }
+    ],
+    "total_results": 3,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

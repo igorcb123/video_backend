@@ -36,6 +36,14 @@ class Settings(BaseSettings):
     ollama_host: str = Field(default="http://localhost:11434", description="Ollama server URL")
     ollama_model: str = Field(default="llama3.1", description="Default LLM model")
     
+    # Media Fetcher Configuration
+    media_provider: Literal["pexels", "google"] = Field(default="pexels", description="Media provider")
+    pexels_api_keys: str = Field(default="", description="Pexels API keys (comma-separated)", alias="PEXELS_API_KEYS")
+    google_custom_search_api_key: str = Field(default="", description="Google Custom Search API key")
+    google_search_engine_id: str = Field(default="", description="Google Custom Search Engine ID")
+    selenium_headless: bool = Field(default=True, description="Run Selenium in headless mode")
+    webdriver_path: str = Field(default="", description="Path to Chrome WebDriver (auto-download if empty)")
+    
     # API Configuration
     api_host: str = Field(default="0.0.0.0", description="API host")
     api_port: int = Field(default=8000, description="API port")

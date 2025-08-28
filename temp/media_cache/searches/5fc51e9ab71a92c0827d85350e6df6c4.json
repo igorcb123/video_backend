@@ -1,0 +1,72 @@
+{
+  "timestamp": 1756343439.5444145,
+  "query": "flowing liquid metal texture",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "831500108303001107",
+        "url": "https://www.google.com/search?q=flowing+liquid+metal+texture&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=vz6Fmw6sLlMbWM&vssid=mosaic",
+        "download_url": "https://static.vecteezy.com/system/resources/previews/028/545/172/non_2x/abstract-silver-gradient-background-flow-chrome-liquid-metal-waves-photo.jpg",
+        "title": "Image 1 from search: flowing liquid metal texture",
+        "description": "Image from Google Images search: flowing liquid metal texture",
+        "tags": [
+          "flowing",
+          "liquid",
+          "metal",
+          "texture"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "static.vecteezy.com",
+        "photographer_url": "https://static.vecteezy.com",
+        "provider": "google"
+      },
+      {
+        "id": "4583494097221941284",
+        "url": "https://www.google.com/search?q=flowing+liquid+metal+texture&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=BaUAMIs_CmGFyM&vssid=mosaic",
+        "download_url": "https://png.pngtree.com/background/20210715/original/pngtree-dark-abstract-flowing-liquid-metal-background-picture-image_1327758.jpg",
+        "title": "Image 2 from search: flowing liquid metal texture",
+        "description": "Image from Google Images search: flowing liquid metal texture",
+        "tags": [
+          "flowing",
+          "liquid",
+          "metal",
+          "texture"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "png.pngtree.com",
+        "photographer_url": "https://png.pngtree.com",
+        "provider": "google"
+      },
+      {
+        "id": "2936428301748663580",
+        "url": "https://www.google.com/search?q=flowing+liquid+metal+texture&source=lnms&tbs=isz:l&sa=X&udm=2#vhid=nHNe0EJxi00KnM&vssid=mosaic",
+        "download_url": "https://pbs.twimg.com/media/GFBAMIjbgAAly04.jpg:large",
+        "title": "Image 3 from search: flowing liquid metal texture",
+        "description": "Image from Google Images search: flowing liquid metal texture",
+        "tags": [
+          "flowing",
+          "liquid",
+          "metal",
+          "texture"
+        ],
+        "width": 0,
+        "height": 0,
+        "file_size": null,
+        "photographer": "pbs.twimg.com",
+        "photographer_url": "https://pbs.twimg.com",
+        "provider": "google"
+      }
+    ],
+    "total_results": 3,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

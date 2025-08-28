@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343365.9794219,
+  "query": "person reading a book",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "33632159",
+        "url": "https://www.pexels.com/photo/woman-reading-a-book-outdoors-in-summer-33632159/",
+        "download_url": "https://images.pexels.com/photos/33632159/pexels-photo-33632159.jpeg",
+        "title": "Photo by 🇻🇳🇻🇳Nguyễn Tiến Thịnh 🇻🇳🇻🇳",
+        "description": "",
+        "tags": [
+          "person reading a book"
+        ],
+        "width": 3072,
+        "height": 4609,
+        "file_size": null,
+        "photographer": "🇻🇳🇻🇳Nguyễn Tiến Thịnh 🇻🇳🇻🇳",
+        "photographer_url": "https://www.pexels.com/@nguy-n-ti-n-th-nh-2150376175",
+        "provider": "Pexels"
+      },
+      {
+        "id": "33566060",
+        "url": "https://www.pexels.com/photo/close-up-of-person-reading-a-book-indoors-33566060/",
+        "download_url": "https://images.pexels.com/photos/33566060/pexels-photo-33566060.jpeg",
+        "title": "Photo by Esra Afşar",
+        "description": "An adult reading a book indoors with a laptop in the background. Perfect for education or lifestyle themes.",
+        "tags": [
+          "person reading a book"
+        ],
+        "width": 3410,
+        "height": 5115,
+        "file_size": null,
+        "photographer": "Esra Afşar",
+        "photographer_url": "https://www.pexels.com/@esra-afsar-123882149",
+        "provider": "Pexels"
+      },
+      {
+        "id": "28055747",
+        "url": "https://www.pexels.com/photo/a-person-lying-with-a-book-28055747/",
+        "download_url": "https://images.pexels.com/photos/28055747/pexels-photo-28055747.jpeg",
+        "title": "Photo by Mohamed Weaam",
+        "description": "A person in casual attire lies on grass with a book on their face, surrounded by crumpled paper.",
+        "tags": [
+          "person reading a book"
+        ],
+        "width": 3856,
+        "height": 4820,
+        "file_size": null,
+        "photographer": "Mohamed Weaam",
+        "photographer_url": "https://www.pexels.com/@mohamed-weaam-101155890",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

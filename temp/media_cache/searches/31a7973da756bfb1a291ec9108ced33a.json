@@ -1,0 +1,63 @@
+{
+  "timestamp": 1756343586.5103314,
+  "query": "human heart anatomy cross section medical illustration",
+  "page": 1,
+  "per_page": 3,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "7723385",
+        "url": "https://www.pexels.com/photo/woman-in-red-and-white-dress-figurine-7723385/",
+        "download_url": "https://images.pexels.com/photos/7723385/pexels-photo-7723385.jpeg",
+        "title": "Photo by Tara Winstead",
+        "description": "Anatomical human model showcasing internal organs and muscles on a plain background.",
+        "tags": [
+          "human heart anatomy cross section medical illustration"
+        ],
+        "width": 6720,
+        "height": 4480,
+        "file_size": null,
+        "photographer": "Tara Winstead",
+        "photographer_url": "https://www.pexels.com/@tara-winstead",
+        "provider": "Pexels"
+      },
+      {
+        "id": "5723878",
+        "url": "https://www.pexels.com/photo/a-medical-imaging-examination-of-the-spine-5723878/",
+        "download_url": "https://images.pexels.com/photos/5723878/pexels-photo-5723878.jpeg",
+        "title": "Photo by cottonbro studio",
+        "description": "An in-depth medical imaging x-ray series focusing on the human spine in high detail.",
+        "tags": [
+          "human heart anatomy cross section medical illustration"
+        ],
+        "width": 4160,
+        "height": 6240,
+        "file_size": null,
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "provider": "Pexels"
+      },
+      {
+        "id": "7723392",
+        "url": "https://www.pexels.com/photo/red-handled-scissors-beside-white-printer-paper-7723392/",
+        "download_url": "https://images.pexels.com/photos/7723392/pexels-photo-7723392.jpeg",
+        "title": "Photo by Tara Winstead",
+        "description": "Anatomy study materials including skeletal models and an X-ray film laid out for educational purposes.",
+        "tags": [
+          "human heart anatomy cross section medical illustration"
+        ],
+        "width": 4179,
+        "height": 6269,
+        "file_size": null,
+        "photographer": "Tara Winstead",
+        "photographer_url": "https://www.pexels.com/@tara-winstead",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 3,
+    "has_next": true
+  }
+}

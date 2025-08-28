@@ -1,54 +1,36 @@
 """
-image_filter_class.py
+Image filtering service using CLIP model.
 
-Clase optimizada para filtrar imágenes basada en CLIP que recibe una descripción
-y un array de URLs de imágenes, devolviendo un objeto con los mismos resultados
-que el código original pero de forma más performante y minimizando falsos positivos.
-
-Uso:
-    filter = ImageFilterCLIP()
-    results = filter.filter_images("A small dog with a ball", image_urls)
+Service for filtering images based on text descriptions, optimized for performance
+and minimizing false positives.
 """
 
 import torch
 import time
 import warnings
-import json
-import io
-import requests
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import List, Dict, Optional, Union, Tuple
+from typing import List, Dict, Optional
 from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
-from urllib.parse import urlparse
 import hashlib
+from utils.image_utils import ImageDownloader, ImageProcessor
 
 
-class ImageFilterCLIP:
-    """
-    Clase optimizada para filtrar imágenes usando CLIP.
+class ImageFilterConfig:
+    """Configuration class for ImageFilterCLIP service."""
     
-    Características:
-    - Procesamiento en batch para máxima performance
-    - Descarga concurrente de imágenes
-    - Cache de embeddings de texto
-    - Configuración flexible de umbrales
-    - Minimización de falsos positivos con umbrales adaptativos
-    """
-    
-    # Configuración por defecto optimizada para minimizar falsos positivos
-    DEFAULT_CONFIG = {
-        "model_name": "openai/clip-vit-base-patch32",
-        "positive_threshold": 0.28,  # Más estricto para reducir falsos positivos
-        "negative_threshold": 0.25,  # Más conservador para detectar contenido problemático
-        "batch_size": 12,  # Optimizado para memoria GPU
-        "max_workers": 8,  # Para descarga concurrente
-        "image_size": (224, 224),
-        "timeout": 10,  # Timeout para descarga de imágenes
-        "max_retries": 2,
-        "device": None,  # Auto-detect
-        "use_cache": True,
-        "negative_prompts": [
+    def __init__(self):
+        """Initialize default configuration."""
+        self.model_name = "openai/clip-vit-base-patch32"
+        self.positive_threshold = 0.28  # More strict to reduce false positives
+        self.negative_threshold = 0.25  # More conservative for problematic content
+        self.batch_size = 12  # Optimized for GPU memory
+        self.max_workers = 8  # For concurrent download
+        self.image_size = (224, 224)
+        self.timeout = 10  # Timeout for image download
+        self.max_retries = 2
+        self.device = None  # Auto-detect
+        self.use_cache = True
+        self.negative_prompts = [
             "nudity", "naked person", "sexual content",
             "violence", "blood", "gore", "graphic injury",
             "weapons", "guns", "knives",
@@ -56,42 +38,72 @@ class ImageFilterCLIP:
             "drug use", "drugs", "smoking",
             "hate symbols", "inappropriate content"
         ]
-    }
+    
+    def update(self, **kwargs):
+        """Update configuration with provided values."""
+        for key, value in kwargs.items():
+            if hasattr(self, key):
+                setattr(self, key, value)
+            else:
+                raise ValueError(f"Unknown configuration key: {key}")
+    
+    def to_dict(self) -> Dict:
+        """Convert configuration to dictionary."""
+        return {key: getattr(self, key) for key in dir(self) 
+                if not key.startswith('_') and not callable(getattr(self, key))}
+
+
+class ImageFilterCLIP:
+    """
+    Service for filtering images using CLIP model.
+    
+    Features:
+    - Batch processing for maximum performance
+    - Concurrent image downloading
+    - Text embedding caching
+    - Flexible threshold configuration
+    - Minimization of false positives with adaptive thresholds
+    """
     
     def __init__(self, config: Optional[Dict] = None):
         """
-        Inicializa el filtro de imágenes.
+        Initialize the image filter.
         
         Args:
-            config: Diccionario con configuración personalizada
+            config: Dictionary with custom configuration
         """
-        self.config = {**self.DEFAULT_CONFIG}
+        self.config = ImageFilterConfig()
         if config:
-            self.config.update(config)
+            self.config.update(**config)
         
         self.model = None
         self.processor = None
         self.device = None
         self._text_embeddings_cache = {}
+        self._image_downloader = ImageDownloader(
+            timeout=self.config.timeout,
+            max_retries=self.config.max_retries,
+            max_workers=self.config.max_workers
+        )
         
         self._initialize_model()
     
     def _initialize_model(self):
-        """Inicializa el modelo CLIP y configura el dispositivo."""
-        print(f"Loading model: {self.config['model_name']}")
+        """Initialize CLIP model and configure device."""
+        print(f"Loading model: {self.config.model_name}")
         start_time = time.time()
         
-        self.model = CLIPModel.from_pretrained(self.config['model_name'])
-        self.processor = CLIPProcessor.from_pretrained(self.config['model_name'])
+        self.model = CLIPModel.from_pretrained(self.config.model_name)
+        self.processor = CLIPProcessor.from_pretrained(self.config.model_name)
         self.model.eval()
         
-        # Configurar dispositivo
-        if self.config['device'] is None:
+        # Configure device
+        if self.config.device is None:
             self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         else:
-            device_str = self.config['device'].lower()
+            device_str = self.config.device.lower()
             if device_str == "cuda" and not torch.cuda.is_available():
-                warnings.warn("CUDA no disponible - usando CPU")
+                warnings.warn("CUDA not available - using CPU")
                 self.device = torch.device("cpu")
             else:
                 self.device = torch.device(device_str)
@@ -115,7 +127,7 @@ class ImageFilterCLIP:
         # Crear clave de cache
         cache_key = hashlib.md5('|'.join(texts).encode()).hexdigest()
         
-        if self.config['use_cache'] and cache_key in self._text_embeddings_cache:
+        if self.config.use_cache and cache_key in self._text_embeddings_cache:
             return self._text_embeddings_cache[cache_key]
         
         inputs = self.processor(text=texts, return_tensors="pt", padding=True)
@@ -130,79 +142,10 @@ class ImageFilterCLIP:
         # Normalizar
         text_embs = text_embs / text_embs.norm(dim=-1, keepdim=True)
         
-        if self.config['use_cache']:
+        if self.config.use_cache:
             self._text_embeddings_cache[cache_key] = text_embs
         
         return text_embs
-    
-    def _download_image(self, url: str) -> Optional[Image.Image]:
-        """
-        Descarga una imagen desde URL con reintentos y manejo de errores.
-        
-        Args:
-            url: URL de la imagen
-            
-        Returns:
-            Imagen PIL o None si falla
-        """
-        for attempt in range(self.config['max_retries']):
-            try:
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                }
-                
-                response = requests.get(
-                    url,
-                    timeout=self.config['timeout'],
-                    headers=headers,
-                    stream=True
-                )
-                response.raise_for_status()
-                
-                # Verificar que es una imagen
-                content_type = response.headers.get('content-type', '').lower()
-                if not any(img_type in content_type for img_type in ['image/', 'jpeg', 'png', 'webp']):
-                    raise ValueError(f"Content type not supported: {content_type}")
-                
-                image = Image.open(io.BytesIO(response.content)).convert("RGB")
-                image = image.resize(self.config['image_size'], Image.LANCZOS)
-                
-                return image
-                
-            except Exception as e:
-                if attempt == self.config['max_retries'] - 1:
-                    print(f"Failed to download {url} after {self.config['max_retries']} attempts: {str(e)}")
-                    return None
-                time.sleep(0.5 * (attempt + 1))  # Backoff exponencial
-        
-        return None
-    
-    def _download_images_concurrent(self, urls: List[str]) -> Dict[str, Optional[Image.Image]]:
-        """
-        Descarga múltiples imágenes de forma concurrente.
-        
-        Args:
-            urls: Lista de URLs
-            
-        Returns:
-            Diccionario con URL -> Image o None
-        """
-        results = {}
-        
-        with ThreadPoolExecutor(max_workers=self.config['max_workers']) as executor:
-            # Enviar todas las tareas
-            future_to_url = {executor.submit(self._download_image, url): url for url in urls}
-            
-            # Recoger resultados
-            for future in as_completed(future_to_url):
-                url = future_to_url[future]
-                try:
-                    results[url] = future.result()
-                except Exception as e:
-                    print(f"Error processing {url}: {str(e)}")
-                    results[url] = None
-        
-        return results
     
     def _compute_image_embeddings_batch(self, images: List[Image.Image]) -> torch.Tensor:
         """
@@ -283,9 +226,9 @@ class ImageFilterCLIP:
             sim_neg_list = sim_neg.cpu().tolist()
             max_neg = max(sim_neg_list) if sim_neg_list else 0.0
             
-            # Identificar prompts negativos activados
+            # Identify triggered negative prompts
             for i, score in enumerate(sim_neg_list):
-                if score >= self.config['negative_threshold']:
+                if score >= self.config.negative_threshold:
                     if i < len(negative_prompts):
                         negatives_triggered.append({
                             "prompt": negative_prompts[i],
@@ -293,14 +236,14 @@ class ImageFilterCLIP:
                             "score_pct": round(score * 100, 2)
                         })
         
-        # Determinar estado con lógica optimizada para reducir falsos positivos
-        if max_neg >= self.config['negative_threshold']:
+        # Determine state with optimized logic to reduce false positives
+        if max_neg >= self.config.negative_threshold:
             state = "censored"
-        elif max_pos >= self.config['positive_threshold']:
-            # Verificación adicional: si hay contenido negativo cerca del umbral, ser más estricto
-            if max_neg > (self.config['negative_threshold'] * 0.8):
-                # Requerir mayor confianza positiva si hay señales negativas
-                required_pos_threshold = self.config['positive_threshold'] * 1.2
+        elif max_pos >= self.config.positive_threshold:
+            # Additional check: if there's negative content near threshold, be more strict
+            if max_neg > (self.config.negative_threshold * 0.8):
+                # Require higher positive confidence if there are negative signals
+                required_pos_threshold = self.config.positive_threshold * 1.2
                 state = "valid" if max_pos >= required_pos_threshold else "no_match"
             else:
                 state = "valid"
@@ -335,63 +278,47 @@ class ImageFilterCLIP:
         """
         if not image_urls:
             return {
-                "model": self.config['model_name'],
+                "model": self.config.model_name,
                 "description": description,
-                "positive_threshold": self.config['positive_threshold'],
-                "negative_threshold": self.config['negative_threshold'],
-                "negative_prompts": negative_prompts or self.config['negative_prompts'],
+                "positive_threshold": self.config.positive_threshold,
+                "negative_threshold": self.config.negative_threshold,
+                "negative_prompts": negative_prompts or self.config.negative_prompts,
                 "results": []
             }
         
         start_time = time.time()
         
-        # Usar prompts negativos por defecto si no se especifican
-        neg_prompts = negative_prompts or self.config['negative_prompts']
+        # Use default negative prompts if not specified
+        neg_prompts = negative_prompts or self.config.negative_prompts
         
         print(f"Processing {len(image_urls)} images...")
         
-        # Calcular embeddings de texto (con cache)
+        # Calculate text embeddings (with cache)
         pos_emb = self._get_text_embeddings([description])
         neg_emb = self._get_text_embeddings(neg_prompts) if neg_prompts else None
         
-        # Descargar imágenes concurrentemente
+        # Download images concurrently using utility class
         print("Downloading images...")
         download_start = time.time()
-        downloaded_images = self._download_images_concurrent(image_urls)
+        downloaded_images = self._image_downloader.download_images_concurrent(
+            image_urls, self.config.image_size
+        )
         download_time = time.time() - download_start
         print(f"Downloaded images in {download_time:.2f}s")
         
-        # Separar imágenes válidas de las que fallaron
-        valid_images = []
-        valid_urls = []
-        failed_urls = []
-        
-        for url in image_urls:
-            img = downloaded_images.get(url)
-            if img is not None:
-                valid_images.append(img)
-                valid_urls.append(url)
-            else:
-                failed_urls.append(url)
+        # Separate valid images from failed downloads using utility
+        valid_images, valid_urls, failed_urls = ImageProcessor.validate_images(
+            downloaded_images, image_urls
+        )
         
         results = []
         
-        # Procesar imágenes que fallaron en descarga
+        # Process failed downloads
         for url in failed_urls:
-            results.append({
-                "image": url,
-                "error": "Failed to download image",
-                "state": "error",
-                "score_positive_raw": 0.0,
-                "score_positive_pct": 0.0,
-                "score_negative_raw": 0.0,
-                "score_negative_pct": 0.0,
-                "negatives_triggered": [],
-                "time_ms": 0.0
-            })
+            results.append(ImageProcessor.create_error_result(url))
         
-        # Procesar imágenes válidas en batches
-        batch_size = self.config['batch_size']
+        # Process valid images in batches
+        batch_size = self.config.batch_size
         
         for i in range(0, len(valid_images), batch_size):
             batch_start = time.time()
@@ -452,10 +379,10 @@ class ImageFilterCLIP:
         print(f"Results: {stats}")
         
         return {
-            "model": self.config['model_name'],
+            "model": self.config.model_name,
             "description": description,
-            "positive_threshold": self.config['positive_threshold'],
-            "negative_threshold": self.config['negative_threshold'],
+            "positive_threshold": self.config.positive_threshold,
+            "negative_threshold": self.config.negative_threshold,
             "negative_prompts": neg_prompts,
             "processing_time_seconds": round(total_time, 2),
             "download_time_seconds": round(download_time, 2),
@@ -465,52 +392,33 @@ class ImageFilterCLIP:
     
     def update_config(self, **kwargs):
         """
-        Actualiza la configuración de la clase.
+        Update service configuration.
         
         Args:
-            **kwargs: Parámetros de configuración a actualizar
+            **kwargs: Configuration parameters to update
         """
-        self.config.update(kwargs)
+        old_config = self.config.to_dict()
+        self.config.update(**kwargs)
         
-        # Si se cambió el modelo, reinicializar
+        # If model changed, reinitialize
         if 'model_name' in kwargs:
             self._initialize_model()
+        
+        # If download-related config changed, reinitialize downloader
+        download_params = {'timeout', 'max_retries', 'max_workers'}
+        if download_params.intersection(kwargs.keys()):
+            self._image_downloader = ImageDownloader(
+                timeout=self.config.timeout,
+                max_retries=self.config.max_retries,
+                max_workers=self.config.max_workers
+            )
     
     def clear_cache(self):
-        """Limpia el cache de embeddings de texto."""
+        """Clear text embeddings cache."""
         self._text_embeddings_cache.clear()
     
     def get_config(self) -> Dict:
-        """Retorna la configuración actual."""
-        return self.config.copy()
+        """Return current configuration."""
+        return self.config.to_dict()
 
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    # Configuración personalizada para mayor performance
-    custom_config = {
-        "positive_threshold": 0.30,
-        "negative_threshold": 0.22,
-        "batch_size": 16,
-        "max_workers": 10
-    }
-    
-    # Inicializar filtro
-    filter_instance = ImageFilterCLIP(custom_config)
-    
-    # URLs de ejemplo (reemplazar con URLs reales)
-    image_urls = [
-        "https://images.pexels.com/photos/7210673/pexels-photo-7210673.jpeg",
-        "https://images.pexels.com/photos/17507248/pexels-photo-17507248.jpeg",
-        "https://images.pexels.com/photos/16549837/pexels-photo-16549837.jpeg",
-        "https://images.pexels.com/photos/15356250/pexels-photo-15356250.jpeg"
-    ]
-    
-    # Filtrar imágenes
-    results = filter_instance.filter_images(
-        description="A small dog with a ball",
-        image_urls=image_urls
-    )
-    
-    # Mostrar resultados
-    print(json.dumps(results, indent=2, ensure_ascii=False))

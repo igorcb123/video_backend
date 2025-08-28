@@ -1,0 +1,47 @@
+{
+  "timestamp": 1756343162.5477827,
+  "query": "happy family having dinner",
+  "page": 1,
+  "per_page": 2,
+  "filters": {},
+  "result": {
+    "items": [
+      {
+        "id": "5638644",
+        "url": "https://www.pexels.com/photo/happy-family-enjoying-dinner-in-garden-5638644/",
+        "download_url": "https://images.pexels.com/photos/5638644/pexels-photo-5638644.jpeg",
+        "title": "Photo by Askar Abayev",
+        "description": "Smiling elderly woman with family and friends enjoying dinner at table backyard garden",
+        "tags": [
+          "happy family having dinner"
+        ],
+        "width": 8171,
+        "height": 5447,
+        "file_size": null,
+        "photographer": "Askar Abayev",
+        "photographer_url": "https://www.pexels.com/@askar-abayev",
+        "provider": "Pexels"
+      },
+      {
+        "id": "5638673",
+        "url": "https://www.pexels.com/photo/cheerful-man-having-dinner-party-with-family-5638673/",
+        "download_url": "https://images.pexels.com/photos/5638673/pexels-photo-5638673.jpeg",
+        "title": "Photo by Askar Abayev",
+        "description": "Joyful outdoor dinner gathering with friends and family enjoying meals and beverages.",
+        "tags": [
+          "happy family having dinner"
+        ],
+        "width": 5000,
+        "height": 3333,
+        "file_size": null,
+        "photographer": "Askar Abayev",
+        "photographer_url": "https://www.pexels.com/@askar-abayev",
+        "provider": "Pexels"
+      }
+    ],
+    "total_results": 8000,
+    "page": 1,
+    "per_page": 2,
+    "has_next": true
+  }
+}
